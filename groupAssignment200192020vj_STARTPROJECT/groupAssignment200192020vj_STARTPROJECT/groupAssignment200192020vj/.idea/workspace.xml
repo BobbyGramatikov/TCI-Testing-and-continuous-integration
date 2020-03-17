@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/jarRepositories.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1176" />
+    <option name="y" value="-26" />
+    <option name="width" value="596" />
+    <option name="height" value="700" />
+  </component>
+  <component name="ProjectId" id="1W1XQJC0K7cWKcBNVSSxwzdiYab" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="codeStyles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="gradle" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="gradle" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="wrapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bettingauthoritiyAPI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bet" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cashier" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="game" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="gamingmachine" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="casino" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="idfactory" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="groupAssignment200192020" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\361750\Downloads\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj_STARTPROJECT\groupAssignment200192020vj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="casino" />
+      <recent name="casino.gamingmachine" />
+      <recent name="casino.game" />
+      <recent name="casino.cashier" />
+      <recent name="bettingauthoritiyAPI" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="casino.game" />
+      <recent name="casino" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="" />
+      <created>1578318056345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578318056345</updated>
+      <workItem from="1578318061798" duration="2665000" />
+      <workItem from="1579522145483" duration="29000" />
+      <workItem from="1579522436113" duration="49000" />
+      <workItem from="1580829306544" duration="3548000" />
+      <workItem from="1580992151283" duration="803000" />
+      <workItem from="1581003026325" duration="690000" />
+      <workItem from="1581004247135" duration="1384000" />
+      <workItem from="1581320969559" duration="357000" />
+      <workItem from="1583503713565" duration="6432000" />
+      <workItem from="1583677953689" duration="18179000" />
+      <workItem from="1583781767439" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17333333" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="simpleUML" order="8" weight="0.32958537" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="4" visible="true" weight="0.20260021" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="UML design tool window" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Viewer" order="5" side_tool="true" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1583699697928">
+      <screen x="0" y="0" width="1200" height="1890" />
+    </state>
+    <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
+    <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583698601904">
+      <screen x="0" y="0" width="1200" height="1890" />
+    </state>
+    <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583698601904" />
+    <state x="330" y="695" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583700677127">
+      <screen x="0" y="0" width="1200" height="1890" />
+    </state>
+    <state x="330" y="695" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583700677127" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bettingauthoritiyAPI/BetLoggingAuthority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/codeStyles/Project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/jarRepositories.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
