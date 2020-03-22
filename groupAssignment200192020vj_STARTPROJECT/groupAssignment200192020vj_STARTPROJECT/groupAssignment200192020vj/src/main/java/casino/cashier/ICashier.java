@@ -13,9 +13,9 @@ public interface ICashier {
 
     /**
      * When handing in the card at a Bank teller, all betID’s on it are logged.
-     * The total amount of money credit is physically handed to the gambler,
-     * and the amount stored on the card is changed to zero.
-     * The stored betID’s on the card are also removed.
+     *      * The total amount of money credit is physically handed to the gambler,
+     *      * and the amount stored on the card is changed to zero.
+     *      * The stored betID’s on the card are also removed.
       * @param card
      */
     void returnGamblerCard(IPlayerCard card);
