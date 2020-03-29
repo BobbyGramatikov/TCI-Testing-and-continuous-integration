@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/groupAssignment200192020vj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/BetResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/BetResult.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +92,7 @@
       <workItem from="1584918636617" duration="601000" />
       <workItem from="1585065435150" duration="394000" />
       <workItem from="1585065868231" duration="1346000" />
-      <workItem from="1585067229535" duration="3650000" />
+      <workItem from="1585067229535" duration="4388000" />
     </task>
     <servers />
   </component>
