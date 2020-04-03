@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="" />
+    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/groupAssignment200192020vj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groupAssignment200192020vj.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +50,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -93,6 +103,8 @@
       <workItem from="1585065435150" duration="394000" />
       <workItem from="1585065868231" duration="1346000" />
       <workItem from="1585067229535" duration="4388000" />
+      <workItem from="1585601527530" duration="1398000" />
+      <workItem from="1585922283518" duration="1793000" />
     </task>
     <servers />
   </component>
@@ -104,6 +116,10 @@
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585923850933">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585923850933" />
     <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583698601904">
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
@@ -112,13 +128,13 @@
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
     <state x="330" y="695" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583700677127" />
-    <state x="1140" y="168" key="SettingsEditor" timestamp="1585065829298">
+    <state x="1351" y="149" key="SettingsEditor" timestamp="1585924029579">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1140" y="168" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585065829298" />
-    <state x="39" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1585601572358">
+    <state x="1351" y="149" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585924029579" />
+    <state x="39" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1585922293644">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585601572358" />
+    <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585922293644" />
   </component>
 </project>
