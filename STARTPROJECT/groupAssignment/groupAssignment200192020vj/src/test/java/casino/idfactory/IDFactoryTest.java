@@ -14,16 +14,16 @@ public class IDFactoryTest {
 
     private static final Object[] FactoryGeneralIdTypes() {
         return new Object[] {
-                new Object[] {"bet"},
-                new Object[] {"round"},
-                new Object[] {"machine"},
-                new Object[] {"card"}
+                new Object[] {"bet",new BetID()},
+                new Object[] {"round",new BettingRoundID()},
+                new Object[] {"machine",new GamingMachineID()},
+                new Object[] {"card",new CardID()}
         };
     }
 
     @Test
     @Parameters(method = "FactoryGeneralIdTypes")
-    public void Factory_Is_Creating_Wanted_General_ID(String types)
+    public void Factory_Is_Creating_Wanted_General_ID(String types,Object classType)
     {
         //arrange
         IDFactory factory = new IDFactory();
@@ -31,6 +31,6 @@ public class IDFactoryTest {
         GeneralID subclass = factory.CreateID(types);
         //assert
         assertThat(subclass, instanceOf(GeneralID.class));
-        assertThat(subclass, instanceOf(BetID.class)); // returns type Generic ID
+        assertThat(subclass, instanceOf(classType.getClass())); // returns type Generic ID
     }
 }

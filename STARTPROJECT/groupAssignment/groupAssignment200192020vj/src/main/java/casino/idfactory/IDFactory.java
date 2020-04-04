@@ -14,6 +14,14 @@ public class IDFactory {
 
   public static GeneralID CreateID(String type)
   {
+      if(type.equals("bet"))
+          return new BetID();
+      else if(type.equals("card"))
+          return new CardID();
+      else if(type.equals("machine"))
+          return new GamingMachineID();
+      else if(type.equals("round"))
+          return new BettingRoundID();
       return null;
   }
 }

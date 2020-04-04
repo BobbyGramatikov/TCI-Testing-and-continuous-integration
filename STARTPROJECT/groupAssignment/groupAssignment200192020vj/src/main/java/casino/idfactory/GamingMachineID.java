@@ -9,7 +9,7 @@ public class GamingMachineID extends GeneralID {
     }
     @Override
     public void CreateID() {
-        ID = Id.timestamp();
+        ID = uuid.timestamp();
     }
 
     @Override

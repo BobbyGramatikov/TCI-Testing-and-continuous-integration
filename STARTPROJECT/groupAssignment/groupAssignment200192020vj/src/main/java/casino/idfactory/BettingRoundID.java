@@ -10,7 +10,7 @@ public class BettingRoundID extends GeneralID implements Comparable {
 
     @Override
     public void CreateID() {
-        ID = Id.timestamp();
+        ID = uuid.timestamp();
     }
 
     @Override
