@@ -30,7 +30,15 @@ public class IDFactoryTest {
         //act
         GeneralID subclass = factory.CreateID(types);
         //assert
-        assertThat(subclass, instanceOf(GeneralID.class));
+
         assertThat(subclass, instanceOf(classType.getClass())); // returns type Generic ID
+    }
+
+    @Test
+    public void Factory_Is_Given_Invalid_Type_For_General_ID()
+    {
+        IDFactory factory = new IDFactory();
+        GeneralID subclass = factory.CreateID("teacher");
+        assertThat(subclass, is(nullValue())); // returns type Generic ID
     }
 }
