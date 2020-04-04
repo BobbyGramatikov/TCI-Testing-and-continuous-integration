@@ -32,5 +32,5 @@ public interface ICasino {
      * @param betToCheck bet to check if it's possible to make using this card.
      * @return true when bet is possible, otherwise false
      */
-    boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck);
+    boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck); // calls placeBet from GamingMachine
 }

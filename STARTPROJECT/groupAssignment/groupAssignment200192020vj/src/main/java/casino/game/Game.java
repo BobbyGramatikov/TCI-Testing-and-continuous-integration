@@ -11,6 +11,9 @@ class NoCurrentRoundException extends Exception {
 }
 
 public class Game implements IGame {
+
+    public BettingRound currentBettingRound;
+
     @Override
     public void startBettingRound() {
 
