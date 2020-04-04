@@ -8,6 +8,7 @@ public class GameTest {
 
     @Test
     public void startBettingRound() {
+
     }
 
     @Test
@@ -20,5 +21,6 @@ public class GameTest {
 
     @Test
     public void isBettingRoundFinished() {
+
     }
 }
