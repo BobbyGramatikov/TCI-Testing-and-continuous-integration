@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="Classes added without any logic&#10;Build Gradle configured 2">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/Casino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +86,27 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+    <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
+      <module name="groupAssignment200192020.test" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="casino.idfactory" />
+      <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <module name="groupAssignment200192020.test" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="casino.idfactory" />
+      <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -115,8 +141,7 @@
       <workItem from="1585067229535" duration="4388000" />
       <workItem from="1585601527530" duration="1398000" />
       <workItem from="1585922283518" duration="14231000" />
-      <workItem from="1585990485867" duration="14743000" />
-      <workItem from="1586011873489" duration="1947000" />
+      <workItem from="1585990485867" duration="19071000" />
     </task>
     <task id="LOCAL-00001" summary="Classes added without any logic&#10;Build Gradle configured">
       <created>1585999601433</created>
@@ -144,14 +169,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Classes added without any logic&#10;Build Gradle configured 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Project_Structure" timestamp="1586012275414">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="883" y="188" key="#Unnamed" timestamp="1586012339390">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="361" y="71" key="#Project_Structure/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586012275414" />
-    <state x="164" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586013718638">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="883" y="188" key="#Unnamed/0.0.2560.1040@0.0.2560.1040" timestamp="1586012339390" />
+    <state x="734" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586013481974">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="164" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586013718638" />
+    <state x="734" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013481974" />
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585925775503">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -161,8 +186,12 @@
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
     <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586009611447" />
-    <state x="920" y="368" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586011948084">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586013448508">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013448508" />
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585923850933">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="920" y="368" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586011948084" />
     <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585923850933" />
@@ -182,11 +211,26 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1586000593960" />
-    <state x="201" y="0" key="SettingsEditor" timestamp="1586013944765">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1586013484287">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="201" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586013944765" />
-    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586001443681" />
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586013484287" />
+    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1586013484286">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586013484286" />
+    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1586013484286">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586013484286" />
+    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1586013484287">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586013484287" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1586013963767">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586013963767" />
     <state x="872" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585999608263">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -195,12 +239,12 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
-    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586001756027">
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586011047576">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586001756027" />
-    <state x="566" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1586012547936">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586011047576" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585940876580">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="566" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586012547936" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1585940876580" />

@@ -11,6 +11,7 @@ import java.util.UUID;
  * when the type is not present, null is returned.
  */
 public class IDFactory {
+
   public static GeneralID CreateID(String type)
   {
       return null;
