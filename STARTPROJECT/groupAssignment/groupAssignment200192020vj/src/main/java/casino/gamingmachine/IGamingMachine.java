@@ -22,7 +22,7 @@ public interface IGamingMachine {
      * getter
      * @return gamingmachineID
      */
-    GamingMachineID getGamingMachineID();
+    GamingMachine getGamingMachineID();
 
     /**
      * connect card to this gaming machine

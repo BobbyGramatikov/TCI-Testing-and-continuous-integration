@@ -6,7 +6,7 @@ import casino.bet.Bet;
 import java.util.Set;
 
 public interface IBettingRound {
-    BettingRoundID getBettingRoundID();
+    BettingRound getBettingRoundID();
 
     /**
      * A gambler can only place one bet per betting round.

@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/groupAssignment200192020vj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/groupAssignment200192020vj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupAssignment200192020.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupAssignment200192020vj.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/bet.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/cashier.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/casino.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/IBettingRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/IBettingRound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/game.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/IGamingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/IGamingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/gamingmachine.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/idfactory.plantuml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,7 +51,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1W1XQJC0K7cWKcBNVSSxwzdiYab" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,6 +65,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -53,15 +74,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="casino" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="casino" />
       <recent name="casino.gamingmachine" />
       <recent name="casino.game" />
       <recent name="casino.cashier" />
       <recent name="bettingauthoritiyAPI" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="casino.game" />
@@ -104,7 +131,8 @@
       <workItem from="1585065868231" duration="1346000" />
       <workItem from="1585067229535" duration="4388000" />
       <workItem from="1585601527530" duration="1398000" />
-      <workItem from="1585922283518" duration="1793000" />
+      <workItem from="1585922283518" duration="14231000" />
+      <workItem from="1585990485867" duration="7730000" />
     </task>
     <servers />
   </component>
@@ -112,10 +140,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1583699697928">
-      <screen x="0" y="0" width="1200" height="1890" />
+    <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585925775503">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585925775503" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1585999390492">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585999390492" />
     <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585923850933">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -128,13 +161,29 @@
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
     <state x="330" y="695" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583700677127" />
-    <state x="1351" y="149" key="SettingsEditor" timestamp="1585924029579">
+    <state x="1031" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585939689112">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1351" y="149" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585924029579" />
-    <state x="39" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1585922293644">
+    <state x="1031" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1040@0.0.2560.1040" timestamp="1585939689112" />
+    <state x="595" y="119" key="CommitChangelistDialog2" timestamp="1585999584134">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585922293644" />
+    <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1585999584134" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1585990808166">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585990808166" />
+    <state x="39" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1585990568941">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585990674445">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990674445" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585940876580">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1585940876580" />
   </component>
 </project>

@@ -1,10 +1,12 @@
 package casino.bet;
 
+import casino.idfactory.BetID;
+
 /**
  * immutable class.
  * keeps unique betID and moneyamount in the bet.
  */
-public class Bet {
+public class Bet extends BetID {
     private BetID betID;
     private MoneyAmount moneyAmount;
 
