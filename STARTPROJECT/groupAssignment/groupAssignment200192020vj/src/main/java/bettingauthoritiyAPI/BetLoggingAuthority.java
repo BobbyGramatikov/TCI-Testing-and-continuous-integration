@@ -3,6 +3,10 @@ package bettingauthoritiyAPI;
 import casino.bet.Bet;
 import casino.bet.BetResult;
 import casino.game.IBettingRound;
+import casino.idfactory.BetID;
+import casino.idfactory.BettingRoundID;
+import casino.idfactory.CardID;
+import casino.idfactory.GamingMachineID;
 
 import java.util.Set;
 
@@ -19,7 +23,7 @@ public class BetLoggingAuthority implements IBetLoggingAuthority {
      *
      */
     @Override
-    public void handOutGamblingCard(GeneralID card){
+    public void handOutGamblingCard(CardID card){
         // timestamp and log
         // NOT RELEVANT TO KNOW THIS
 
@@ -34,7 +38,7 @@ public class BetLoggingAuthority implements IBetLoggingAuthority {
      *
      */
     @Override
-    public void handInGamblingCard(GeneralID card, Set<BetID> betsMade){
+    public void handInGamblingCard(CardID card, Set<BetID> betsMade){
         // timestamp and log
         // NOT RELEVANT TO KNOW THIS
 
@@ -55,8 +59,6 @@ public class BetLoggingAuthority implements IBetLoggingAuthority {
         // NOT RELEVANT TO KNOW THIS
 
     }
-
-
     /**
      * this method logs an accepted bet by a BettingRound. It should be called:
      * after startBettingRound is called,

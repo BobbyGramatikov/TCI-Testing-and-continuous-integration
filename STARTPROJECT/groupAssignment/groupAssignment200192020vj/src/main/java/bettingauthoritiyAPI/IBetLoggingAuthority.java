@@ -3,6 +3,10 @@ package bettingauthoritiyAPI;
 import casino.bet.Bet;
 import casino.bet.BetResult;
 import casino.game.IBettingRound;
+import casino.idfactory.BetID;
+import casino.idfactory.BettingRoundID;
+import casino.idfactory.CardID;
+import casino.idfactory.GamingMachineID;
 
 import java.util.Set;
 
@@ -12,7 +16,7 @@ public interface IBetLoggingAuthority {
      * <p>
      * it's used for logging purposes by the betlogging authority.
      */
-    public void handOutGamblingCard(GeneralID card);
+    public void handOutGamblingCard(CardID card);
 
     /**
      * this method logs the PlayerCard which is turned in by a Gambler.
@@ -21,7 +25,7 @@ public interface IBetLoggingAuthority {
      * <p>
      * it's used for logging purposes by the betlogging authority.
      */
-    public void handInGamblingCard(GeneralID card, Set<BetID> betsMade);
+    public void handInGamblingCard(CardID card, Set<BetID> betsMade);
 
     /**
      * this method logs when a BettingRound starts. It should be called before any submitted bets are added to

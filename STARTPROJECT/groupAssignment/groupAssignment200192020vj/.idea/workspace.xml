@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="">
+    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="Classes added without any logic&#10;Build Gradle configured 2">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupAssignment200192020.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupAssignment200192020vj.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/bet.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/cashier.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/casino.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/IBettingRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/IBettingRound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/game.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/IGamingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/IGamingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/gamingmachine.plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/idfactory.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bettingauthoritiyAPI/BetLoggingAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bettingauthoritiyAPI/BetLoggingAuthority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bettingauthoritiyAPI/IBetLoggingAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bettingauthoritiyAPI/IBetLoggingAuthority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/Casino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -73,11 +62,12 @@
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="casino.idfactory" />
       <recent name="casino" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -132,23 +122,43 @@
       <workItem from="1585067229535" duration="4388000" />
       <workItem from="1585601527530" duration="1398000" />
       <workItem from="1585922283518" duration="14231000" />
-      <workItem from="1585990485867" duration="7730000" />
+      <workItem from="1585990485867" duration="14743000" />
     </task>
+    <task id="LOCAL-00001" summary="Classes added without any logic&#10;Build Gradle configured">
+      <created>1585999601433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585999601433</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Classes added without any logic&#10;Build Gradle configured 2">
+      <created>1586000557405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586000557405</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Classes added without any logic&#10;Build Gradle configured" />
+    <MESSAGE value="Classes added without any logic&#10;Build Gradle configured 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes added without any logic&#10;Build Gradle configured 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585925775503">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585925775503" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1585999390492">
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586009611447">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585999390492" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586009611447" />
     <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585923850933">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -165,22 +175,26 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1031" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1040@0.0.2560.1040" timestamp="1585939689112" />
-    <state x="595" y="119" key="CommitChangelistDialog2" timestamp="1585999584134">
+    <state x="595" y="119" key="CommitChangelistDialog2" timestamp="1586000593960">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1585999584134" />
-    <state x="1126" y="94" key="SettingsEditor" timestamp="1585990808166">
+    <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1586000593960" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1586001443681">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585990808166" />
+    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586001443681" />
+    <state x="872" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585999608263">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="255" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1585999608263" />
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog" timestamp="1585990568941">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
-    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1585990674445">
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586001756027">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990674445" />
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586001756027" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585940876580">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

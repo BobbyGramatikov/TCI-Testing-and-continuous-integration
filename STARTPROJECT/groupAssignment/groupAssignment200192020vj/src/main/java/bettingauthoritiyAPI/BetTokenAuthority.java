@@ -1,6 +1,8 @@
 package bettingauthoritiyAPI;
 
 
+import casino.idfactory.BettingRoundID;
+
 /**
  *
  */

@@ -14,7 +14,6 @@ public class GamingMachineID extends GeneralID {
 
     @Override
     public int compareTo(Object o) {
-        int result = this.compareTo(o);
-        return result;
+        return 0;
     }
 }

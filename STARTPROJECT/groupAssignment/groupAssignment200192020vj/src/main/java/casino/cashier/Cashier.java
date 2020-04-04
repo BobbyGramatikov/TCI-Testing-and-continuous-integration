@@ -2,6 +2,7 @@ package casino.cashier;
 
 import casino.ICasino;
 import casino.bet.Bet;
+import casino.bet.MoneyAmount;
 import casino.game.IGame;
 
 class BetNotExceptedException extends Exception {
@@ -10,20 +11,25 @@ class BetNotExceptedException extends Exception {
     }
 }
 
-public class Cashier implements ICasino {
-    @Override
-    public void addGame(String gameName, IGame gameToAdd) {
-
-    }
+public class Cashier implements ICashier {
 
     @Override
-    public IGame getGame(String name) {
+    public IPlayerCard distributeGamblerCard() {
         return null;
     }
 
     @Override
-    public boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck) {
+    public void returnGamblerCard(IPlayerCard card) {
+
+    }
+
+    @Override
+    public boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck) throws BetNotExceptedException {
         return false;
     }
 
+    @Override
+    public void addAmount(IPlayerCard card, MoneyAmount amount) {
+
+    }
 }
