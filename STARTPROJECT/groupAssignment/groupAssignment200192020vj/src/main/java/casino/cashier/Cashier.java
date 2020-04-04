@@ -11,6 +11,7 @@ class BetNotExceptedException extends Exception {
     }
 }
 
+
 public class Cashier implements ICashier {
 
     @Override
