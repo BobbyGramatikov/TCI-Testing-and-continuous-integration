@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="Classes added without any logic&#10;Build Gradle configured 2">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BetID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BetID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BettingRoundID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BettingRoundID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/CardID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/CardID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GamingMachineID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GamingMachineID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GeneralID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GeneralID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/GeneralID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/GeneralID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="Classes added without any logic&#10;Build Gradle configured 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
