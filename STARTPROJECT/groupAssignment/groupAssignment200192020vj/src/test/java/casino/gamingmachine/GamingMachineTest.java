@@ -26,70 +26,70 @@ public class GamingMachineTest {
          //       -	amount_is_positive_should_return_true_PASS
            //     -	amount_on_card_is_64_cents_PASS *
 
-    private static final Object[] FactoryGeneralIdTypes() {
-        return new Object[] {
-                new Object[] {
-                        "moneyAmount",new MoneyAmount(1),
-                        "bet",new Bet(1,Object instanceOf(Object.getClass()),
-                        "betResult",new BetResult(1,1)}
-        };
-    }
-    long amountInCents = 1;
-
-
-
-//checks if the
-    @Test
-    public void Passed_Amount_Is_More_Than_Zero() throws NoPlayerCardException {
-        //arrange
-        GamingMachine gamingMachine = new GamingMachine();
-        IPlayerCard playerCard = new PlayerCard();
-
-        BettingRound bettingRound = mock(BettingRound.class);
-        Game game = mock(Game.class);
-
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        sut.placeBet(amountInCents);
-        //3.7
-        //68 then() arrage
-        //
-        verify(game.acceptBet(bet,gamingMachine)).booleanValue();
-
-        if(verify(bettingRound.placeBet(bet)).booleanValue();
-
-        //act
-        gamingMachine.connectCard(playerCard);
-        gamingMachine.placeBet(amountInCents);
-        gamingMachine.acceptWinner(winResult);
-
-        //gamingMachine.getGamingMachineID();
-
-        //assert
-
-        assertEquals(1,playerCard.getNumberOfBetIDs());
-        assertEquals(1,playerCard.returnBetIDs());
-
-    }
-
-    @Test
-    public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException {
-        //arrange
-        PlayerCard playerCard = mock(PlayerCard.class);
-        //BettingRound bettingRound = mock(BettingRound.class);
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-
-        //act
-        sut.placeBet(amountInCents);
-
-        //gamingMachine.getGamingMachineID();
-
-        //assert
-        verify(sut.currentGame.currentBettingRound.placeBet(bet));
-    }
+//    private static final Object[] FactoryGeneralIdTypes() {
+//        return new Object[] {
+//                new Object[] {
+//                        "moneyAmount",new MoneyAmount(1),
+//                        "bet",new Bet(1,Object instanceOf(Object.getClass()),
+//                        "betResult",new BetResult(1,1)}
+//        };
+//    }
+//    long amountInCents = 1;
+//
+//
+//
+////checks if the
+//    @Test
+//    public void Passed_Amount_Is_More_Than_Zero() throws NoPlayerCardException {
+//        //arrange
+//        GamingMachine gamingMachine = new GamingMachine();
+//        IPlayerCard playerCard = new PlayerCard();
+//
+//        BettingRound bettingRound = mock(BettingRound.class);
+//        Game game = mock(Game.class);
+//
+//        Bet bet = mock(Bet.class);
+//
+//        GamingMachine sut = new GamingMachine();
+//        sut.placeBet(amountInCents);
+//        //3.7
+//        //68 then() arrage
+//        //
+//        verify(game.acceptBet(bet,gamingMachine)).booleanValue();
+//
+//        if(verify(bettingRound.placeBet(bet)).booleanValue();
+//
+//        //act
+//        gamingMachine.connectCard(playerCard);
+//        gamingMachine.placeBet(amountInCents);
+//        gamingMachine.acceptWinner(winResult);
+//
+//        //gamingMachine.getGamingMachineID();
+//
+//        //assert
+//
+//        assertEquals(1,playerCard.getNumberOfBetIDs());
+//        assertEquals(1,playerCard.returnBetIDs());
+//
+//    }
+//
+//    @Test
+//    public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException {
+//        //arrange
+//        PlayerCard playerCard = mock(PlayerCard.class);
+//        //BettingRound bettingRound = mock(BettingRound.class);
+//        Bet bet = mock(Bet.class);
+//
+//        GamingMachine sut = new GamingMachine();
+//
+//        //act
+//        sut.placeBet(amountInCents);
+//
+//        //gamingMachine.getGamingMachineID();
+//
+//        //assert
+//        verify(sut.currentGame.currentBettingRound.placeBet(bet));
+//    }
 
     @Test
     public void amount_is_negative_should_return_false_PASS() {
