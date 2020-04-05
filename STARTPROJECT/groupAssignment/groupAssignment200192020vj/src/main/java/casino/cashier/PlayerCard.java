@@ -27,7 +27,7 @@ public class PlayerCard implements IPlayerCard {
     public BetID generateNewBetID() {
         betId = new BetID();
 
-        return null;
+        return betId;
     }
 
     @Override

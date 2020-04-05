@@ -12,7 +12,7 @@ public class PlayerCardTest {
     public void generateNewBetIdReturnsNull() throws NullPointerException {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        BetID mockBetId = null;
+        BetID mockBetId = playerCard.generateNewBetID();
         boolean expected = false;
         boolean actual = false;
 
