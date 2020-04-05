@@ -21,4 +21,17 @@ public class CashierTest {
         //assert
         verify(mockPlayerCard).setMoneyAmount(mockMoneyAmount);
     }
+
+    @Test
+    public void returnGamblerCardCallsReturnBetIDsAndClearCard() {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+
+        //act
+        cashier.returnGamblerCard(mockPlayerCard);
+
+        //assert
+        verify(mockPlayerCard).returnBetIDsAndClearCard();
+    }
 }
