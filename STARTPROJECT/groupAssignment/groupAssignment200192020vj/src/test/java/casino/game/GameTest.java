@@ -26,7 +26,7 @@ public class GameTest {
 
 
     @Test
-    public void Accept_Bet_True_When_4_Current_Bets_Placed() throws NoCurrentRoundException // ACCEPT IF BETTING ROUND- BETS < 5 AND THERE IS BETTING ROUND
+    public void Accept_Bet_True_When_4_Current_Bets_Placed() throws NoCurrentRoundException
     {
         Bet dummyBet = Mockito.mock(Bet.class); // dummy
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
@@ -49,27 +49,11 @@ public class GameTest {
         Game sut = new Game(null);
         sut.acceptBet(dummyBet, gamingMachine );
     }
-    /**
-     * Accept a bet on the current betting round.
-     *
-     * log relevant information for the betloggingauthority.
-     *
- //    * @param bet the bet to be made on the betting round
-  //   * @param gamingMachine gamingmachine which places bet on this game.
-     * @return true when bet is accepted by the game, otherwise false.
-     * @throws NoCurrentRoundException when no BettingRound is currently active.
-     */
 
 // A bet on a game is submitted through betting machines (to which Players have connected their gambling card).
 // Max 1 bet per machine can be submitted for the current betting round in a game.
 // When a submitted Bet is added to the Game, that excepted Bet is stored by the Betting Round,
 // and is also sent to the Gambling Authority.
-
-    @Test(expected = NoCurrentRoundException.class)
-    public  void Accept_Bet_Throws_No_Current_Round_Exception()
-    {
-
-    }
 
     @Test
     public void determineWinner()

@@ -7,35 +7,35 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+STARTPROJECT/**/workspace.xml
+STARTPROJECT/**/tasks.xml
+STARTPROJECT/**/usage.statistics.xml
+STARTPROJECT/**/dictionaries
+STARTPROJECT/**/shelf
 
 # Generated files
-.idea/**/contentModel.xml
+STARTPROJECT/**/contentModel.xml
 
 # Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+STARTPROJECT/**/dataSources/
+STARTPROJECT/**/dataSources.ids
+STARTPROJECT/**/dataSources.local.xml
+STARTPROJECT/**/sqlDataSources.xml
+STARTPROJECT/**/dynamic.xml
+STARTPROJECT/**/uiDesigner.xml
+STARTPROJECT/**/dbnavigator.xml
 
 # Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+STARTPROJECT/**/gradle.xml
+STARTPROJECT/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
+# STARTPROJECT/modules.xml
+# STARTPROJECT/*.iml
+# STARTPROJECT/modules
 # *.iml
 # *.ipr
 
@@ -43,7 +43,7 @@
 cmake-build-*/
 
 # Mongo Explorer plugin
-.idea/**/mongoSettings.xml
+STARTPROJECT/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -58,7 +58,7 @@ out/
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-.idea/replstate.xml
+STARTPROJECT/replstate.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
