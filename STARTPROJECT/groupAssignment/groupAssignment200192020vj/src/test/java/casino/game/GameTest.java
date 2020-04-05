@@ -1,8 +1,10 @@
 package casino.game;
+import bettingauthoritiyAPI.BetTokenAuthority;
 import casino.bet.Bet;
 import casino.gamingmachine.GamingMachine;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -17,11 +19,22 @@ import static org.hamcrest.Matchers.*;
 
 public class GameTest {
 
+    Game sut;
+
+    @Before
+    public void setUp()
+    {
+        BetTokenAuthority dummyAuth = Mockito.mock(BetTokenAuthority.class);
+        GameRules dummyRules= Mockito.mock(GameRules.class);
+        GamingMachine dummyMachine = Mockito.mock(GamingMachine.class);
+        BettingRound dummyRound = Mockito.mock(BettingRound.class);
+        sut = new Game(dummyAuth,dummyRound,dummyRules,dummyMachine);
+    }
 
     @Test
     public void Start_Betting_Round_Creates_New_Betting_Round_With_New_Id()
     {
-        Game sut = new Game();
+
         sut.startBettingRound();
         BettingRound oldRound = sut.currentBettingRound;
         assertThat(oldRound.id,not(nullValue()));
@@ -37,7 +50,6 @@ public class GameTest {
         Bet dummyBet = Mockito.mock(Bet.class); // dummy
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
-        Game sut = new Game();
         sut.SetBettingRound(currentBettingRound);
         Mockito.when(currentBettingRound.numberOFBetsMade()).thenReturn(4);
         assertThat(sut.acceptBet(dummyBet, gamingMachine), is(true));
@@ -50,10 +62,9 @@ public class GameTest {
     @Test(expected = NoCurrentRoundException.class)
     public void Accept_Bet_Throw_No_Current_Round_Exception() throws NoCurrentRoundException
     {
-        Bet dummyBet = Mockito.mock(Bet.class); // dummy
-        BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
+        Bet dummyBet = Mockito.mock(Bet.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
-        Game sut = new Game();
+        sut.SetBettingRound(null);
         sut.acceptBet(dummyBet, gamingMachine );
     }
 
@@ -80,8 +91,6 @@ public class GameTest {
     @Test
     public void isBettingRoundFinished()
     {
-        Game sut = new Game();
-
         BettingRound bettingRound= Mockito.mock(BettingRound.class);
         GameRules gameRules = Mockito.mock(GameRules.class);
         sut.SetBettingRound(bettingRound);

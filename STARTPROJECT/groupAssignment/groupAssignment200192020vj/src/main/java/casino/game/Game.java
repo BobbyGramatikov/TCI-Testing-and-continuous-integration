@@ -1,16 +1,34 @@
 package casino.game;
 
+import bettingauthoritiyAPI.BetTokenAuthority;
+import bettingauthoritiyAPI.BettingAuthority;
+import bettingauthoritiyAPI.IBetTokenAuthority;
 import casino.bet.Bet;
+import casino.bet.BetResult;
+import casino.gamingmachine.GamingMachine;
 import casino.gamingmachine.IGamingMachine;
+
+import java.util.Set;
 
 
 public class Game implements IGame {
 
+    public BetTokenAuthority auth;
     public BettingRound currentBettingRound;
     public GameRules gameRules;
+    public GamingMachine gamingMachine;
+
+    public Game(BetTokenAuthority auth,BettingRound round,GameRules rules,GamingMachine machine)
+    {
+        this.auth= auth;
+        this.currentBettingRound=round;
+        this.gameRules = rules;
+        this.gamingMachine = machine;
+    }
+
     @Override
     public void startBettingRound() {
-        currentBettingRound = new BettingRound();
+        currentBettingRound = new BettingRound(auth.getBetToken(currentBettingRound.id));
     }
 
     @Override
@@ -29,8 +47,11 @@ public class Game implements IGame {
     }
 
     @Override
-    public void determineWinner() {
-
+    public void determineWinner()
+    {
+        Set<Bet> bets = currentBettingRound.getAllBetsMade();
+        BetResult winnerBet = gameRules.determineWinner(auth.getRandomInteger(currentBettingRound.token) ,bets);
+        gamingMachine.acceptWinner(winnerBet);
     }
 
     @Override
@@ -54,4 +75,16 @@ public class Game implements IGame {
     public void SetGameRules(GameRules rules) {
         this.gameRules = rules;
     }
+
+    @Override
+    public void SetGamingMachine(GamingMachine machine) {
+        this.gamingMachine = machine;
+    }
+
+    @Override
+    public void SetBettingAuthority(BetTokenAuthority auth) {
+        this.auth =auth;
+    }
+
+
 }

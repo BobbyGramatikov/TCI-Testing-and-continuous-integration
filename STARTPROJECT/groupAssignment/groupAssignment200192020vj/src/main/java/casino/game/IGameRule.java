@@ -19,6 +19,7 @@ public interface IGameRule {
      * @param bets
      * @return
      */
+
     BetResult determineWinner(Integer randomWinValue, Set<Bet> bets);
 
     /**

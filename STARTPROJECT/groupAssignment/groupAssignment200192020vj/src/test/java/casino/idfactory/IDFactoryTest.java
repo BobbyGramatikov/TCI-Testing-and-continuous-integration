@@ -30,7 +30,6 @@ public class IDFactoryTest {
         //act
         GeneralID subclass = factory.CreateID(types);
         //assert
-
         assertThat(subclass, instanceOf(classType.getClass())); // returns type Generic ID
     }
 
