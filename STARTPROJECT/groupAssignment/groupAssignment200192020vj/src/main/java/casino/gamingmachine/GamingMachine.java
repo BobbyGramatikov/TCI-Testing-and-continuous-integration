@@ -30,7 +30,6 @@ public class GamingMachine implements IGamingMachine
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
         // place bet
-        verify(sut.currentGame.currentBettingRound.placeBet(bet));
 
     }
 
