@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/Cashier.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/Cashier.class" afterDir="false" />
@@ -20,6 +21,19 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/Cashier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/IPlayerCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/PlayerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/PlayerCard.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/Casino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" afterDir="false" />
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +47,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,14 +88,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+<<<<<<< HEAD
       <recent name="casino.cashier" />
+=======
+      <recent name="casino.game" />
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
       <recent name="casino.idfactory" />
       <recent name="casino" />
     </key>
@@ -93,10 +118,13 @@
       <recent name="casino" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.CashierTest">
+=======
+  <component name="RunManager" selected="JUnit.GameTest.startBettingRound">
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
-      <useClassPathOnly />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
       <option name="METHOD_NAME" value="" />
@@ -109,7 +137,6 @@
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <module name="groupAssignment200192020.test" />
-      <useClassPathOnly />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
       <option name="METHOD_NAME" value="" />
@@ -120,6 +147,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="CashierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <extension name="coverage">
@@ -131,10 +159,57 @@
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.CashierTest" />
       <option name="TEST_OBJECT" value="class" />
+=======
+    <configuration name="GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="Accept_Bet_Throw_No_Current_Round_Exception" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="Accept_Bet_True_When_4_Current_Bets_Placed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.startBettingRound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="startBettingRound" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
     <configuration name="PlayerCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <extension name="coverage">
@@ -146,14 +221,108 @@
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
       <option name="TEST_OBJECT" value="class" />
+=======
+    <configuration name="IDFactoryTest.Factory_Is_Given_Invalid_Type_For_General_ID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.idfactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.idfactory" />
+      <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
+      <option name="METHOD_NAME" value="Factory_Is_Given_Invalid_Type_For_General_ID" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.idfactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.idfactory" />
+      <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
+      <option name="METHOD_NAME" value="On_New_Type_Created_Id_Is_Not_Null" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="groupAssignment200192020" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="groupAssignment200192020" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CashierTest" />
         <item itemvalue="JUnit.PlayerCardTest" />
+=======
+    <list>
+      <item itemvalue="Android JUnit.IDFactoryTest" />
+      <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Given_Invalid_Type_For_General_ID" />
+      <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
+      <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
+      <item itemvalue="JUnit.GameTest.startBettingRound" />
+      <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameTest.startBettingRound" />
+        <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
+        <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
+        <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
       </list>
     </recent_temporary>
   </component>
@@ -222,24 +391,28 @@
     </state>
     <state x="358" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586019856736" />
     <state x="734" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013481974" />
+    <state x="92" y="92" width="2376" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586090634595">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="92" y="92" width="2376" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586090634595" />
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585925775503">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585925775503" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586009611447">
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586088486811">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586009611447" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586088486811" />
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586013448508">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013448508" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585923850933">
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586022663490">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="920" y="368" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586011948084" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585923850933" />
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586022663490" />
     <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583698601904">
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
@@ -257,6 +430,7 @@
     </state>
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586084983276" />
     <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1586000593960" />
+<<<<<<< HEAD
     <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1586092118946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -278,9 +452,32 @@
     <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586092118946" />
     <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586016181056" />
     <state x="1126" y="94" key="SettingsEditor" timestamp="1586014864302">
+=======
+    <state x="1060" y="277" key="FileChooserDialogImpl" timestamp="1586087082003">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586014864302" />
+    <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586090604216">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586090604216">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
+    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586090604216">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586090604216">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1586086951348">
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586086951348" />
     <state x="872" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585999608263">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -289,15 +486,23 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
+<<<<<<< HEAD
     <state x="631" y="189" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586090663735">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="189" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586090663735" />
     <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586011047576" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585940876580">
+=======
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586018911970">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586018911970" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586033415721">
+>>>>>>> 117742e702d639718452fd4912543366f79eb959
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="566" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586012547936" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1585940876580" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1586033415721" />
   </component>
 </project>

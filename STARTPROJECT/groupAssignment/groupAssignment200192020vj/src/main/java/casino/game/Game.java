@@ -11,14 +11,27 @@ class NoCurrentRoundException extends Exception {
 }
 
 public class Game implements IGame {
+
+    public BettingRound currentBettingRound;
+
     @Override
     public void startBettingRound() {
-
+        currentBettingRound = new BettingRound();
     }
 
     @Override
     public boolean acceptBet(Bet bet, IGamingMachine gamingMachine) throws NoCurrentRoundException {
-        return false;
+        if (currentBettingRound == null)
+        {
+            throw new NoCurrentRoundException("Please add a round first.");
+        }
+        if(currentBettingRound.numberOFBetsMade()<5){
+        return true;
+        }
+        else
+            {
+            return false;
+        }
     }
 
     @Override
@@ -29,5 +42,10 @@ public class Game implements IGame {
     @Override
     public boolean isBettingRoundFinished() {
         return false;
+    }
+
+    @Override
+    public void SetBettingRound(BettingRound round) {
+        this.currentBettingRound = round;
     }
 }

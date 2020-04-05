@@ -49,5 +49,5 @@ public interface IGame {
      */
     boolean isBettingRoundFinished();
 
-
+    void SetBettingRound(BettingRound round);
 }

@@ -1,11 +1,23 @@
 package casino.game;
 
 import bettingauthoritiyAPI.BetToken;
+import casino.Casino;
 import casino.bet.Bet;
+import casino.idfactory.BettingRoundID;
+import casino.idfactory.IDFactory;
 
 import java.util.Set;
 
 public class BettingRound implements IBettingRound {
+
+    BettingRoundID id;
+    Set<Bet> bets;
+
+    public BettingRound()
+    {
+        IDFactory factory = new IDFactory();
+        id = (BettingRoundID) factory.CreateID("round");
+    }
     @Override
     public BettingRound getBettingRoundID() {
         return null;
