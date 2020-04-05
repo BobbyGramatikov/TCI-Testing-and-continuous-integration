@@ -34,7 +34,7 @@ public class PlayerCard implements IPlayerCard {
         IDFactory factory = new IDFactory();
         betId = (BetID) factory.CreateID("bet");
 
-
+        betIDs.add(betId);
 
         return betId;
     }

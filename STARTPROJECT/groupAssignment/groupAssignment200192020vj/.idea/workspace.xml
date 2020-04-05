@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9133e04-e15f-41d8-8c4d-d2481a552cae" name="Default Changelist" comment="Classes added without any logic&#10;Build Gradle configured 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/bettingauthoritiyAPI/BetToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/bettingauthoritiyAPI/BetToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +96,7 @@
       <recent name="casino" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.isBettingRoundFinished">
+  <component name="RunManager" selected="JUnit.PlayerCardTest.generateNewBetIDAddsBetIdToTheSet">
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
@@ -120,22 +132,6 @@
       <option name="PACKAGE_NAME" value="casino.game" />
       <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
       <option name="METHOD_NAME" value="Accept_Bet_Throw_No_Current_Round_Exception" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="groupAssignment200192020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="casino.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="casino.game" />
-      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
-      <option name="METHOD_NAME" value="Accept_Bet_True_When_4_Current_Bets_Placed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,6 +180,22 @@
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
       <option name="METHOD_NAME" value="On_New_Type_Created_Id_Is_Not_Null" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.cashier" />
+      <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
+      <option name="METHOD_NAME" value="generateNewBetIDAddsBetIdToTheSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,19 +250,19 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.IDFactoryTest" />
-      <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
       <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
       <item itemvalue="JUnit.GameTest.startBettingRound" />
       <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
       <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
+      <item itemvalue="JUnit.PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" />
         <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
         <item itemvalue="JUnit.GameTest.startBettingRound" />
         <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
         <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
-        <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -364,29 +376,34 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586099317844">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1586105266975">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105266975" />
     <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
-    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586099317844">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1586105266974">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105266974" />
     <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
-    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586099317844">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1586105266974">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105266974" />
     <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
-    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586099317844">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1586105266975">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105266975" />
     <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
     <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586099515200">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586099515200" />
-    <state x="1126" y="94" key="SettingsEditor" timestamp="1586086951348">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="498" y="0" key="SettingsEditor" timestamp="1586105239263">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105239263" />
     <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586086951348" />
     <state x="799" y="238" key="VCS.ChangeListViewerDialog" timestamp="1586099480817">
       <screen x="0" y="0" width="2560" height="1040" />
