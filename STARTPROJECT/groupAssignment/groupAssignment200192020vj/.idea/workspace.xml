@@ -12,11 +12,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/cashier/PlayerCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/cashier/PlayerCardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/casino/cashier/PlayerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/cashier/PlayerCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/casino/cashier/PlayerCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/cashier/PlayerCardTest.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/GamingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/GamingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +109,11 @@
       <recent name="casino" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.PlayerCardTest.returnBetIdsReturnClearCard">
+=======
+  <component name="RunManager" selected="JUnit.GameTest.isBettingRoundFinished">
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
@@ -139,7 +154,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
@@ -147,15 +166,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
       <option name="METHOD_NAME" value="generateNewBetIDAddsBetIdToTheSet" />
+=======
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="Accept_Bet_True_When_4_Current_Bets_Placed" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="PlayerCardTest.returnBetIdsReturnActualBet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="GameTest.isBettingRoundFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
@@ -163,14 +192,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
       <option name="METHOD_NAME" value="returnBetIdsReturnActualBet" />
+=======
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="isBettingRoundFinished" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="PlayerCardTest.returnBetIdsReturnClearCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020" />
       <extension name="coverage">
@@ -182,22 +218,45 @@
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
       <option name="METHOD_NAME" value="returnBetIdsReturnClearCard" />
+=======
+    <configuration name="GameTest.startBettingRound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="groupAssignment200192020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="casino.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="casino.game" />
+      <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
+      <option name="METHOD_NAME" value="startBettingRound" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="PlayerCardTest.returnBetIdsReturnNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="casino.cashier.*" />
+          <option name="PATTERN" value="casino.idfactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="PACKAGE_NAME" value="casino.cashier" />
       <option name="MAIN_CLASS_NAME" value="casino.cashier.PlayerCardTest" />
       <option name="METHOD_NAME" value="returnBetIdsReturnNull" />
+=======
+      <option name="PACKAGE_NAME" value="casino.idfactory" />
+      <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
+      <option name="METHOD_NAME" value="On_New_Type_Created_Id_Is_Not_Null" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,6 +311,7 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.IDFactoryTest" />
+<<<<<<< HEAD
       <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
       <item itemvalue="JUnit.PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" />
       <item itemvalue="JUnit.PlayerCardTest.returnBetIdsReturnNull" />
@@ -265,6 +325,21 @@
         <item itemvalue="JUnit.PlayerCardTest.returnBetIdsReturnNull" />
         <item itemvalue="JUnit.PlayerCardTest.generateNewBetIDAddsBetIdToTheSet" />
         <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
+=======
+      <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
+      <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
+      <item itemvalue="JUnit.GameTest.startBettingRound" />
+      <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
+      <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameTest.isBettingRoundFinished" />
+        <item itemvalue="JUnit.GameTest.startBettingRound" />
+        <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
+        <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
+        <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
       </list>
     </recent_temporary>
   </component>
@@ -349,11 +424,11 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013448508" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586097530181">
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586105110290">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="920" y="368" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586011948084" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586097530181" />
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586105110290" />
     <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583698601904">
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
@@ -378,6 +453,7 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
+<<<<<<< HEAD
     <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1586107833578">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -399,13 +475,31 @@
     <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586107833578" />
     <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
     <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586099515200">
+=======
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586105893890">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586099515200" />
-    <state x="498" y="0" key="SettingsEditor" timestamp="1586105239263">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586105893890" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586105893889">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="498" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586105239263" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586105893889" />
+    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586105893889">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586105893889" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586105893889">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586105893889" />
+    <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586101425309">
+>>>>>>> b094de6035c11ebc3acda2fdec0e943848ee60df
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586101425309" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1586086951348">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
     <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586086951348" />
     <state x="799" y="238" key="VCS.ChangeListViewerDialog" timestamp="1586099480817">
       <screen x="0" y="0" width="2560" height="1040" />
@@ -423,10 +517,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586099501892">
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586101416336">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586099501892" />
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586101416336" />
     <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586018911970">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -436,19 +530,5 @@
     </state>
     <state x="566" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586012547936" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1586033415721" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/casino/game/GameTest.java</url>
-          <line>80</line>
-          <properties class="casino.game.GameTest" method="isBettingRoundFinished">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

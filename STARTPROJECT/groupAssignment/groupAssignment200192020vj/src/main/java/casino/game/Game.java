@@ -34,8 +34,15 @@ public class Game implements IGame {
     }
 
     @Override
-    public boolean isBettingRoundFinished() {
-        return false;
+    public boolean isBettingRoundFinished()
+    {
+        if(currentBettingRound.numberOFBetsMade() < gameRules.getMaxBetsPerRound())
+        {
+            return false;
+        }
+        else
+            return true;
+
     }
 
     @Override

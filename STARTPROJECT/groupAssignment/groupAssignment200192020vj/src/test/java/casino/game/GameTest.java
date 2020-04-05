@@ -81,13 +81,15 @@ public class GameTest {
     public void isBettingRoundFinished()
     {
         Game sut = new Game();
-        sut.startBettingRound();
-        GameRules rules = new GameRules();
-        sut.SetGameRules(rules);
-        BettingRound bettingRound= Mockito.spy(sut.currentBettingRound);
-        GameRules gameRules = Mockito.spy(sut.gameRules);
+
+        BettingRound bettingRound= Mockito.mock(BettingRound.class);
+        GameRules gameRules = Mockito.mock(GameRules.class);
+        sut.SetBettingRound(bettingRound);
+        sut.SetGameRules(gameRules);
         Mockito.when(gameRules.getMaxBetsPerRound()).thenReturn(5);
         Mockito.when(bettingRound.numberOFBetsMade()).thenReturn(4);
+        assertFalse(sut.isBettingRoundFinished());
+        Mockito.when(sut.currentBettingRound.numberOFBetsMade()).thenReturn(5);
         assertTrue(sut.isBettingRoundFinished());
     }
 }
