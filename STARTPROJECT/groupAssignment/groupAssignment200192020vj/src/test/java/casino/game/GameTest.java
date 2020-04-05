@@ -31,7 +31,8 @@ public class GameTest {
         Bet dummyBet = Mockito.mock(Bet.class); // dummy
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
-        Game sut = new Game(currentBettingRound);
+        Game sut = new Game();
+        sut.SetBettingRound(currentBettingRound);
         Mockito.when(currentBettingRound.numberOFBetsMade()).thenReturn(4);
         assertThat(sut.acceptBet(dummyBet, gamingMachine), is(true));
         Mockito.when(currentBettingRound.numberOFBetsMade()).thenReturn(5);
@@ -46,15 +47,17 @@ public class GameTest {
         Bet dummyBet = Mockito.mock(Bet.class); // dummy
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
-        Game sut = new Game(null);
+        Game sut = new Game();
         sut.acceptBet(dummyBet, gamingMachine );
     }
 
-// A bet on a game is submitted through betting machines (to which Players have connected their gambling card).
-// Max 1 bet per machine can be submitted for the current betting round in a game.
-// When a submitted Bet is added to the Game, that excepted Bet is stored by the Betting Round,
-// and is also sent to the Gambling Authority.
 
+    /**
+     * Calculate the winner using the gamerules.
+     * Let the gamingMachine update the winner's amount at the bank teller
+     *
+     * log relevant information for the betloggingauthority.
+     */
     @Test
     public void determineWinner()
     {

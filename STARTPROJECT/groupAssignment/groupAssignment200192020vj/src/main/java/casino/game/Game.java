@@ -12,12 +12,7 @@ class NoCurrentRoundException extends Exception {
 
 public class Game implements IGame {
 
-    public BettingRound currentBettingRound= new BettingRound();
-
-    public Game(BettingRound bettingRound)
-    {
-        this.currentBettingRound = bettingRound;
-    }
+    public BettingRound currentBettingRound;
 
     @Override
     public void startBettingRound() {
@@ -47,5 +42,10 @@ public class Game implements IGame {
     @Override
     public boolean isBettingRoundFinished() {
         return false;
+    }
+
+    @Override
+    public void SetBettingRound(BettingRound round) {
+        this.currentBettingRound = round;
     }
 }

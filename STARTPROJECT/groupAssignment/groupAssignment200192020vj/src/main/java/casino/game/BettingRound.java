@@ -6,6 +6,9 @@ import casino.bet.Bet;
 import java.util.Set;
 
 public class BettingRound implements IBettingRound {
+
+    Set<Bet> bets;
+
     @Override
     public BettingRound getBettingRoundID() {
         return null;
