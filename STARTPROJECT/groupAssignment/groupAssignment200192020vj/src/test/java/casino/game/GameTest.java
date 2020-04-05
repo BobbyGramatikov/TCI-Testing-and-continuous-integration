@@ -1,4 +1,5 @@
 package casino.game;
+import bettingauthoritiyAPI.BetToken;
 import bettingauthoritiyAPI.BetTokenAuthority;
 import bettingauthoritiyAPI.BettingAuthority;
 import casino.bet.Bet;
@@ -13,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
+import java.awt.event.MouseEvent;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -87,18 +89,23 @@ public class GameTest {
         BettingRound round = Mockito.mock(BettingRound.class);
         sut.SetBettingRound(round);
         Set<Bet> mySet = (Set<Bet>) Mockito.mock(Set.class);
-        Mockito.when(sut.currentBettingRound.getAllBetsMade()).thenReturn(mySet);
+
+        Mockito.when(round.getAllBetsMade()).thenReturn(mySet);
         GamingMachine machine = Mockito.mock(GamingMachine.class);
         sut.SetGamingMachine(machine);
         GameRules rules = Mockito.mock(GameRules.class);
         sut.SetGameRules(rules);
-        sut.determineWinner();
+
         Bet dummyBet = Mockito.mock(Bet.class);
-        MoneyAmount dummyMoneyAmount = Mockito.mock(MoneyAmount.class);
+        MoneyAmount dummyMoneyAmount = new MoneyAmount(999);
         BetResult betWinner = new BetResult(dummyBet,dummyMoneyAmount);
-        Mockito.when(sut.auth.getRandomInteger(sut.currentBettingRound.token)).thenReturn(10);
-        Mockito.when(sut.gameRules.determineWinner(sut.auth.getRandomInteger(sut.currentBettingRound.token),mySet)).thenReturn(betWinner);
-        Mockito.verify(sut.gamingMachine).acceptWinner(betWinner);
+        BetToken dummyToken = Mockito.mock(BetToken.class);
+        Mockito.when(auth.getRandomInteger(dummyToken)).thenReturn(3);
+        assertThat(3,is(auth.getRandomInteger(dummyToken)));
+        Mockito.when(rules.determineWinner(Mockito.anyInt(),Mockito.anySet())).thenReturn(betWinner);
+        sut.determineWinner();
+        assertThat(betWinner,is(notNullValue()));
+        Mockito.verify(machine).acceptWinner(betWinner);
     }
 
 

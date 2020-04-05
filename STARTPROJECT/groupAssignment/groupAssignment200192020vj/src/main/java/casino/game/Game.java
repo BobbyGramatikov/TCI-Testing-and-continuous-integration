@@ -49,9 +49,10 @@ public class Game implements IGame {
     @Override
     public void determineWinner()
     {
-        Set<Bet> bets = currentBettingRound.getAllBetsMade();
-        BetResult winnerBet = gameRules.determineWinner(auth.getRandomInteger(currentBettingRound.token) ,bets);
-        gamingMachine.acceptWinner(winnerBet);
+        Set<Bet> myBets = currentBettingRound.getAllBetsMade();
+        BetResult betResultWinner = gameRules.determineWinner(auth.getRandomInteger(currentBettingRound.token) ,myBets);
+        if(betResultWinner!=null)
+        gamingMachine.acceptWinner(betResultWinner);
     }
 
     @Override
