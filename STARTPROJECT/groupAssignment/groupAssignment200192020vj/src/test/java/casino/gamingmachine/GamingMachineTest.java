@@ -151,7 +151,7 @@ public class GamingMachineTest {
         sut.placeBet(amountInCents);
 
         //assert
-        verify(game.acceptBet(bet,sut));
+        verify((game).acceptBet(bet,sut));
     }
 
     @Test
@@ -159,10 +159,12 @@ public class GamingMachineTest {
         //arrange
         Bet bet = mock(Bet.class);
         GamingMachine sut = new GamingMachine();
-
+        Game game = mock(Game.class);
+        sut.setGame(game);
+        BettingRound round = mock(BettingRound.class);
+        sut.currentGame.SetBettingRound(round);
         //act
         sut.placeBet(amountInCents);
-
         //assert
         verify(sut.currentGame.currentBettingRound.placeBet(bet));
     }

@@ -19,14 +19,18 @@ class NoPlayerCardException extends Exception {
 public class GamingMachine implements IGamingMachine
 {
     PlayerCard currentConnectedCard = new PlayerCard();
-
     BettingRound br = new BettingRound();
-    Game  currentGame;
+    Game currentGame;
 
+    public void setGame(Game game){
+        currentGame = game;
+    }
+    //setters
     @Override
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
         // place bet
+
     }
 
     @Override
