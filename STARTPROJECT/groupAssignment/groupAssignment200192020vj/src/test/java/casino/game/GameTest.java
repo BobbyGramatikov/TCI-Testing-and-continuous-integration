@@ -5,6 +5,7 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.Set;
@@ -30,10 +31,13 @@ public class GameTest {
         Bet dummyBet = Mockito.mock(Bet.class); // dummy
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
-        Game sut = new Game();
+        Game sut = new Game(currentBettingRound);
         Mockito.when(currentBettingRound.numberOFBetsMade()).thenReturn(4);
         assertTrue(sut.acceptBet(dummyBet, gamingMachine ));
+        Mockito.when(currentBettingRound.numberOFBetsMade()).thenReturn(5);
+        assertThat(sut.acceptBet(dummyBet, gamingMachine ),is(false));
     }
+
     /**
      * Accept a bet on the current betting round.
      *

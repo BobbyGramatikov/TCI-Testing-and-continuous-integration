@@ -14,6 +14,12 @@ public class Game implements IGame {
 
     public BettingRound currentBettingRound= new BettingRound();
 
+
+    public Game(BettingRound bettingRound)
+    {
+        this.currentBettingRound = bettingRound;
+    }
+
     @Override
     public void startBettingRound() {
 
@@ -25,7 +31,9 @@ public class Game implements IGame {
         return true;
         }
         else
+            {
             return false;
+        }
     }
 
     @Override
