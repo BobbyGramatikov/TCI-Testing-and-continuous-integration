@@ -10,6 +10,7 @@ public class PlayerCard implements IPlayerCard {
 
     public long Id;
     private MoneyAmount moneyAmount;
+    private Set<BetID> betIDs;
 
     @Override
     public Set<BetID> returnBetIDs() {
