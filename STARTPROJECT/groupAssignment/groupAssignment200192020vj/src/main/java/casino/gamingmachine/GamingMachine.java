@@ -13,6 +13,7 @@ public class GamingMachine implements IGamingMachine {
     @Override
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
+        // place bet
     }
 
     @Override
