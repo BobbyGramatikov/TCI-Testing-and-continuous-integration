@@ -4,12 +4,6 @@ import casino.bet.Bet;
 import casino.gamingmachine.IGamingMachine;
 
 
-class NoCurrentRoundException extends Exception {
-    public NoCurrentRoundException(String errorMessage) {
-        super(errorMessage);
-    }
-}
-
 public class Game implements IGame {
 
     public BettingRound currentBettingRound;

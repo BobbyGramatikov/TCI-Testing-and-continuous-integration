@@ -3,6 +3,7 @@ package casino.gamingmachine;
 import casino.bet.BetResult;
 import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
+import casino.game.BettingRound;
 import casino.game.Game;
 
 import java.util.ArrayList;
@@ -19,7 +20,9 @@ public class GamingMachine implements IGamingMachine
 {
     PlayerCard currentConnectedCard = new PlayerCard();
 
-    Game  currentGame = new Game();
+    BettingRound br = new BettingRound();
+    Game  currentGame = new Game(br);
+
     @Override
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
@@ -28,7 +31,7 @@ public class GamingMachine implements IGamingMachine
 
     @Override
     public void acceptWinner(BetResult winResult) {
-
+//call method game 
     }
 
     @Override
