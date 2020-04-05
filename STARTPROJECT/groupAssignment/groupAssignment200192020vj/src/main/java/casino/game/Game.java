@@ -12,7 +12,7 @@ class NoCurrentRoundException extends Exception {
 
 public class Game implements IGame {
 
-    public BettingRound currentBettingRound;
+    public BettingRound currentBettingRound= new BettingRound();
 
     @Override
     public void startBettingRound() {
@@ -21,7 +21,11 @@ public class Game implements IGame {
 
     @Override
     public boolean acceptBet(Bet bet, IGamingMachine gamingMachine) throws NoCurrentRoundException {
-        return false;
+        if(currentBettingRound.numberOFBetsMade()<5){
+        return true;
+        }
+        else
+            return false;
     }
 
     @Override
