@@ -11,7 +11,7 @@ import static org.mockito.Mockito.verify;
 public class PlayerCardTest {
 
     @Test
-    public void generateNewBetIdCallsIdFactory() {
+    public void generateNewBetIdCallsIdFactoryTest() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
         BetID mockBetId = mock(BetID.class);

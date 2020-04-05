@@ -9,7 +9,7 @@ import static org.mockito.Mockito.*;
 public class CashierTest {
 
     @Test
-    public void addAmountCallsSetMoneyAmount() {
+    public void addAmountCallsSetMoneyAmountTest() {
         //arrange
         Cashier cashier = new Cashier();
         PlayerCard mockPlayerCard = mock(PlayerCard.class);

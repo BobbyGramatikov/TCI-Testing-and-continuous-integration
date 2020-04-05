@@ -1,8 +1,8 @@
 package casino.idfactory;
 
 
-public class CardID extends GeneralID implements Comparable{
-    public long ID;
+public class CardID extends GeneralID implements Comparable<GeneralID> {
+    public String ID;
 
     public CardID()
     {
@@ -10,11 +10,16 @@ public class CardID extends GeneralID implements Comparable{
     }
     @Override
     public void CreateID() {
-        ID = uuid.timestamp();
+        ID = uuid.toString();
     }
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(GeneralID o) {
+        return this.GetID().compareTo(o.GetID());
+    }
+
+    @Override
+    public String GetID() {
+        return ID;
     }
 }
