@@ -1,6 +1,9 @@
 package casino.game;
 import bettingauthoritiyAPI.BetTokenAuthority;
+import bettingauthoritiyAPI.BettingAuthority;
 import casino.bet.Bet;
+import casino.bet.BetResult;
+import casino.bet.MoneyAmount;
 import casino.gamingmachine.GamingMachine;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -75,10 +78,27 @@ public class GameTest {
      *
      * log relevant information for the betloggingauthority.
      */
+
     @Test
     public void determineWinner()
     {
-
+        BetTokenAuthority auth = Mockito.mock(BetTokenAuthority.class);
+        sut.SetBettingAuthority(auth);
+        BettingRound round = Mockito.mock(BettingRound.class);
+        sut.SetBettingRound(round);
+        Set<Bet> mySet = (Set<Bet>) Mockito.mock(Set.class);
+        Mockito.when(sut.currentBettingRound.getAllBetsMade()).thenReturn(mySet);
+        GamingMachine machine = Mockito.mock(GamingMachine.class);
+        sut.SetGamingMachine(machine);
+        GameRules rules = Mockito.mock(GameRules.class);
+        sut.SetGameRules(rules);
+        sut.determineWinner();
+        Bet dummyBet = Mockito.mock(Bet.class);
+        MoneyAmount dummyMoneyAmount = Mockito.mock(MoneyAmount.class);
+        BetResult betWinner = new BetResult(dummyBet,dummyMoneyAmount);
+        Mockito.when(sut.auth.getRandomInteger(sut.currentBettingRound.token)).thenReturn(10);
+        Mockito.when(sut.gameRules.determineWinner(sut.auth.getRandomInteger(sut.currentBettingRound.token),mySet)).thenReturn(betWinner);
+        Mockito.verify(sut.gamingMachine).acceptWinner(betWinner);
     }
 
 
