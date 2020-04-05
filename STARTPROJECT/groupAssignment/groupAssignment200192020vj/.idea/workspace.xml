@@ -344,11 +344,11 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585925775503" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586091414013">
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586099252408">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586091414013" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586099252408" />
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586013448508">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -378,22 +378,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586099231113">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586099317844">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586099231113" />
-    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586099231113">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586099317844">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586099231113" />
-    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586099231112">
+    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
+    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586099317844">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586099231112" />
-    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586099231113">
+    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586099317844">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586099231113" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586099317844" />
     <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586097299118">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -410,10 +410,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586097289212">
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586099344626">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586097289212" />
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586099344626" />
     <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586018911970">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
