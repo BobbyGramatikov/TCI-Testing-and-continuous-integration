@@ -77,10 +77,9 @@
       <recent name="casino" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception">
+  <component name="RunManager" selected="Android JUnit.IDFactoryTest">
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
-      <useClassPathOnly />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
       <option name="METHOD_NAME" value="" />
@@ -93,7 +92,6 @@
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <module name="groupAssignment200192020.test" />
-      <useClassPathOnly />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
       <option name="METHOD_NAME" value="" />
@@ -186,21 +184,7 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.IDFactoryTest" />
-      <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Creating_Wanted_General_ID" />
-      <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Given_Invalid_Type_For_General_ID" />
-      <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed" />
-      <item itemvalue="JUnit.GameTest.Accept_Bet_False_When_5_Current_Bets_Placed" />
-      <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception" />
-        <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed" />
-        <item itemvalue="JUnit.GameTest.Accept_Bet_False_When_5_Current_Bets_Placed" />
-        <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Creating_Wanted_General_ID" />
-        <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Given_Invalid_Type_For_General_ID" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

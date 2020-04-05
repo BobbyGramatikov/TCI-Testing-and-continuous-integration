@@ -9,6 +9,7 @@ import casino.bet.MoneyAmount;
 import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
 import casino.game.BettingRound;
+import casino.game.Game;
 import junitparams.JUnitParamsRunner;
 
 import static org.hamcrest.Matchers.instanceOf;
@@ -36,7 +37,6 @@ public class GamingMachineTest {
     long amountInCents = 1;
 
 
-    betResult winResult = 1;
 
 //checks if the
     @Test
@@ -46,11 +46,18 @@ public class GamingMachineTest {
         IPlayerCard playerCard = new PlayerCard();
 
         BettingRound bettingRound = mock(BettingRound.class);
+        Game game = mock(Game.class);
+
         Bet bet = mock(Bet.class);
 
         GamingMachine sut = new GamingMachine();
         sut.placeBet(amountInCents);
-        verify(bettingRound.placeBet(bet)).booleanValue();
+        //3.7
+        //68 then() arrage
+        //
+        verify(game.acceptBet(bet,gamingMachine)).booleanValue();
+
+        if(verify(bettingRound.placeBet(bet)).booleanValue();
 
         //act
         gamingMachine.connectCard(playerCard);
@@ -67,16 +74,23 @@ public class GamingMachineTest {
     }
 
     @Test
-    public void amount_on_card_is_0_cents_PASS() {
+    public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException {
+        //arrange
+        PlayerCard playerCard = mock(PlayerCard.class);
+        //BettingRound bettingRound = mock(BettingRound.class);
+        Bet bet = mock(Bet.class);
 
+        GamingMachine sut = new GamingMachine();
 
+        //act
+        sut.placeBet(amountInCents);
 
+        //gamingMachine.getGamingMachineID();
 
-
-
-
-
+        //assert
+        verify(sut.currentGame.currentBettingRound.placeBet(bet));
     }
+
     @Test
     public void amount_is_negative_should_return_false_PASS() {
 
