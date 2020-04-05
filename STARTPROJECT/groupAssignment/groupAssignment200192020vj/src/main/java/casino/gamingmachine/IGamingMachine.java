@@ -12,7 +12,8 @@ public interface IGamingMachine {
     boolean placeBet(long amountInCents) throws NoPlayerCardException;
 
     /**
-     * Accept the BetResult from the winner. clear all open bets on this machine.
+     * Accept the BetResult from the winner.
+     * clear all open bets on this machine.
      * when the winner has made his bet in this machine: let the Cashier update the amount.
      * @param winResult
      */
