@@ -4,6 +4,8 @@ import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
 import org.junit.Test;
 
+import java.util.Set;
+
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
@@ -12,15 +14,17 @@ public class PlayerCardTest {
     public void generateNewBetIdReturnsNull() throws NullPointerException {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        BetID mockBetId = playerCard.generateNewBetID();
+        BetID mockBetId;// = playerCard.generateNewBetID();
         boolean expected = false;
         boolean actual = false;
+        //doReturn(mockBetId).when(playerCard).generateNewBetID(); !Player card should be spy
 
         //act
-        //mockBetId = playerCard.generateNewBetID();
+        mockBetId = playerCard.generateNewBetID();
         if (mockBetId == null){
             actual = true;
         }
+
         //assert
         assertEquals("Generating an ID returns Null", expected, actual);
 
@@ -41,6 +45,24 @@ public class PlayerCardTest {
         }
         //assert
         assertEquals("Does not return BetID", expected, actual);
+
+    }
+
+    @Test
+    public void returnBetIdsReturnNull() {
+        //arrange
+        PlayerCard playerCard = new PlayerCard();
+        Set<BetID> mockBetIds;
+        boolean expected = true;
+        boolean actual = true;
+
+        //act
+        mockBetIds = playerCard.returnBetIDs();
+        if (mockBetIds == null){
+            actual = false;
+        }
+        //assert
+        assertEquals("Return betIDs returns null", expected, actual);
 
     }
 }
