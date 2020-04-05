@@ -12,15 +12,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/Casino.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BetID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BetID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BettingRoundID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/BettingRoundID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/CardID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/CardID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GamingMachineID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GamingMachineID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GeneralID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/GeneralID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/Casino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BetID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/BettingRoundID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/CardID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/GamingMachineID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/GeneralID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/GeneralID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" afterDir="false" />
     </list>
@@ -344,11 +352,11 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="998" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1585925775503" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586088486811">
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser" timestamp="1586091414013">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="405" y="652" key="#com.intellij.ide.util.MemberChooser/0.0.1200.1890/1200.523.1920.1050@0.0.1200.1890" timestamp="1583699697928" />
-    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586088486811" />
+    <state x="870" y="287" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586091414013" />
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586013448508">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -378,22 +386,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586090604216">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586092889116">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
-    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586090604216">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586092889116" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586092889116">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
-    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586090604216">
+    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586092889116" />
+    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586092889115">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
-    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586090604216">
+    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586092889115" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586092889116">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586090604216" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586092889116" />
     <state x="1126" y="94" key="SettingsEditor" timestamp="1586086951348">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

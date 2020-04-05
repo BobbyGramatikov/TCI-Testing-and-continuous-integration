@@ -47,6 +47,6 @@ public class IDFactoryTest {
     {
         IDFactory factory = new IDFactory();
         BettingRoundID subclass = (BettingRoundID) factory.CreateID("round");
-        assertThat(subclass.ID, is(notNullValue()));
+        assertThat(subclass.GetID(), is(notNullValue()));
     }
 }

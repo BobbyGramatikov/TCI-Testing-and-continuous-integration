@@ -12,6 +12,7 @@ import java.util.UUID;
  */
 public class IDFactory {
 
+  @org.jetbrains.annotations.Nullable
   public static GeneralID CreateID(String type)
   {
       if(type.equals("bet"))

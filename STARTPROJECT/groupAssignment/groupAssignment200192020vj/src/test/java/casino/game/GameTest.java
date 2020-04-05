@@ -19,7 +19,7 @@ public class GameTest {
 
 
     @Test
-    public void startBettingRound()
+    public void Start_Betting_Round_Creates_New_Betting_Round_With_New_Id()
     {
         Game sut = new Game();
         sut.startBettingRound();
@@ -30,7 +30,6 @@ public class GameTest {
         assertThat(newRound.id,not(nullValue()));
         assertThat(oldRound.id.compareTo(newRound.id),not(0));
     }
-
 
     @Test
     public void Accept_Bet_True_When_4_Current_Bets_Placed() throws NoCurrentRoundException
