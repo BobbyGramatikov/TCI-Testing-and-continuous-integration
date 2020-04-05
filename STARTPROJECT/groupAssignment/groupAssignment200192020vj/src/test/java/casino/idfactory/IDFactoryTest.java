@@ -41,4 +41,12 @@ public class IDFactoryTest {
         GeneralID subclass = factory.CreateID("teacher");
         assertThat(subclass, is(nullValue())); // returns type Generic ID
     }
+
+    @Test
+    public void On_New_Type_Created_Id_Is_Not_Null()
+    {
+        IDFactory factory = new IDFactory();
+        BettingRoundID subclass = (BettingRoundID) factory.CreateID("round");
+        assertThat(subclass.ID, is(notNullValue()));
+    }
 }

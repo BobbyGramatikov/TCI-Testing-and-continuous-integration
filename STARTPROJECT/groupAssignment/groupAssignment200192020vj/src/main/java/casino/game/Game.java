@@ -16,7 +16,7 @@ public class Game implements IGame {
 
     @Override
     public void startBettingRound() {
-
+        currentBettingRound = new BettingRound();
     }
 
     @Override

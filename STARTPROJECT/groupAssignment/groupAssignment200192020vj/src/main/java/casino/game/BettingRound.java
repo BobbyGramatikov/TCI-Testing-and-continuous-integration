@@ -15,7 +15,8 @@ public class BettingRound implements IBettingRound {
 
     public BettingRound()
     {
-        id = (BettingRoundID) IDFactory.CreateID("bet");
+        IDFactory factory = new IDFactory();
+        id = (BettingRoundID) factory.CreateID("round");
     }
     @Override
     public BettingRound getBettingRoundID() {

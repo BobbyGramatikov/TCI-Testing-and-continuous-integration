@@ -22,9 +22,12 @@ public class GameTest {
     public void startBettingRound()
     {
         Game sut = new Game();
+        sut.startBettingRound();
         BettingRound oldRound = sut.currentBettingRound;
+        assertThat(oldRound.id,not(nullValue()));
         sut.startBettingRound();
         BettingRound newRound = sut.currentBettingRound;
+        assertThat(newRound.id,not(nullValue()));
         assertThat(oldRound.id.compareTo(newRound.id),not(0));
     }
 
