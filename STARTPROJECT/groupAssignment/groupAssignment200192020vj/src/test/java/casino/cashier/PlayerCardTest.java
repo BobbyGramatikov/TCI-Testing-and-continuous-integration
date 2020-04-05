@@ -86,17 +86,22 @@ public class PlayerCardTest {
     }
 
     @Test
-    public void getNumberOfBetIds() {
+    public void returnBetIdsReturnClearCard() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        int expected = 0;
-        int actual = -1;
+        boolean expected = true;
+        boolean actual = true;
 
         //act
-        actual = playerCard.getNumberOfBetIDs();
-
+        playerCard.generateNewBetID();
+        int betCountBefore = 1;
+        playerCard.returnBetIDsAndClearCard();
+        int betCountAfter = playerCard.getNumberOfBetIDs();
+        if (betCountBefore == betCountAfter){
+            actual = false;
+        }
         //assert
-        assertEquals("Get number of bet Ids does not return expected value", expected, actual);
+        assertEquals("returnBetIdsAndClearCard does not clear the card", expected, actual);
 
     }
 }

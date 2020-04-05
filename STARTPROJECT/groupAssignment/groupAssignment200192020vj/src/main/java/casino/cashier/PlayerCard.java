@@ -20,13 +20,15 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public Set<BetID> returnBetIDs() {
-
         return betIDs;
     }
 
     @Override
     public Set<BetID> returnBetIDsAndClearCard() {
-        return null;
+        Set<BetID> returnBets = betIDs;
+        betIDs.clear();
+
+        return returnBets;
     }
 
     @Override
@@ -46,7 +48,7 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public CardID getCardID() {
-        return null;
+        return cardID;
     }
 
 
