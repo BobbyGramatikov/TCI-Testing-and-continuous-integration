@@ -14,6 +14,11 @@ public class Game implements IGame {
 
     public BettingRound currentBettingRound= new BettingRound();
 
+    public Game(BettingRound bettingRound)
+    {
+        this.currentBettingRound = bettingRound;
+    }
+
     @Override
     public void startBettingRound() {
 
@@ -21,11 +26,17 @@ public class Game implements IGame {
 
     @Override
     public boolean acceptBet(Bet bet, IGamingMachine gamingMachine) throws NoCurrentRoundException {
+        if (currentBettingRound == null)
+        {
+            throw new NoCurrentRoundException("Please add a round first.");
+        }
         if(currentBettingRound.numberOFBetsMade()<5){
         return true;
         }
         else
+            {
             return false;
+        }
     }
 
     @Override

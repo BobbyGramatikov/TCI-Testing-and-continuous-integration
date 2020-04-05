@@ -18,6 +18,7 @@ public class GamingMachine implements IGamingMachine
 {
     PlayerCard currentConnectedCard =new PlayerCard();
 
+
     @Override
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
