@@ -1,6 +1,10 @@
 package casino.game;
 
+import bettingauthoritiyAPI.BetTokenAuthority;
+import bettingauthoritiyAPI.BettingAuthority;
+import bettingauthoritiyAPI.IBetTokenAuthority;
 import casino.bet.Bet;
+import casino.gamingmachine.GamingMachine;
 import casino.gamingmachine.IGamingMachine;
 
 /**
@@ -51,4 +55,6 @@ public interface IGame {
 
     void SetBettingRound(BettingRound round);
     void SetGameRules(GameRules rules);
+    void SetGamingMachine(GamingMachine machine);
+    void SetBettingAuthority(BetTokenAuthority auth);
 }

@@ -11,12 +11,14 @@ import java.util.Set;
 public class BettingRound implements IBettingRound {
 
     BettingRoundID id;
+    BetToken token;
     Set<Bet> bets;
 
-    public BettingRound()
+    public BettingRound(BetToken token)
     {
         IDFactory factory = new IDFactory();
         id = (BettingRoundID) factory.CreateID("round");
+        this.token =token;
     }
     @Override
     public BettingRound getBettingRoundID() {

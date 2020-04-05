@@ -19,7 +19,7 @@ class NoPlayerCardException extends Exception {
 public class GamingMachine implements IGamingMachine
 {
     PlayerCard currentConnectedCard = new PlayerCard();
-    BettingRound br = new BettingRound();
+    BettingRound br;
     Game currentGame;
 
     public void setGame(Game game){
