@@ -14,10 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/GamingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/gamingmachine/GamingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,22 +299,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="595" y="119" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1586000593960" />
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586080276386">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom" timestamp="1586080957006">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586080276386" />
-    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586080276386">
+    <state width="2517" height="208" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586080957006" />
+    <state width="2517" height="208" key="GridCell.Tab.0.center" timestamp="1586080957006">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586080276386" />
-    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586080276386">
+    <state width="2517" height="208" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586080957006" />
+    <state width="2517" height="208" key="GridCell.Tab.0.left" timestamp="1586080957006">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586080276386" />
-    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586080276386">
+    <state width="2517" height="208" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586080957006" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right" timestamp="1586080957006">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586080276386" />
+    <state width="2517" height="208" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586080957006" />
     <state x="1126" y="94" key="SettingsEditor" timestamp="1586014864302">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

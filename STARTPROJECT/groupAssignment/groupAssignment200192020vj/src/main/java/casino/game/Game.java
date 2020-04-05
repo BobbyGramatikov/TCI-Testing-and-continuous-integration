@@ -14,7 +14,6 @@ public class Game implements IGame {
 
     public BettingRound currentBettingRound= new BettingRound();
 
-
     public Game(BettingRound bettingRound)
     {
         this.currentBettingRound = bettingRound;
