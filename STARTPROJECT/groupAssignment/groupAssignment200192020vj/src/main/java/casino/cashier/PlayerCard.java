@@ -11,6 +11,7 @@ public class PlayerCard implements IPlayerCard {
     public long Id;
     private MoneyAmount moneyAmount;
     private Set<BetID> betIDs;
+    BetID betId;
 
     @Override
     public Set<BetID> returnBetIDs() {
@@ -24,6 +25,8 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public BetID generateNewBetID() {
+        betId = new BetID();
+
         return null;
     }
 
