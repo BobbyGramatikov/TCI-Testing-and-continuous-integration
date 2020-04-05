@@ -25,8 +25,10 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public Set<BetID> returnBetIDsAndClearCard() {
+        Set<BetID> returnBets = betIDs;
+        betIDs.clear();
 
-        return betIDs;
+        return returnBets;
     }
 
     @Override
