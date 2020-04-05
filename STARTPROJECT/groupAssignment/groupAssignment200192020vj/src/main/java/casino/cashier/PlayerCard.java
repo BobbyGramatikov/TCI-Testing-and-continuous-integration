@@ -28,6 +28,8 @@ public class PlayerCard implements IPlayerCard {
         Set<BetID> returnBets = betIDs;
         betIDs.clear();
 
+
+
         return returnBets;
     }
 
