@@ -70,9 +70,24 @@ public class GameTest {
 
     }
 
+
+
+    /**
+     * determine if the right number of bets are done (determined by gamerules) to be able to
+     * calculate a winner.
+     * @return true if all necessary bets are made in the betting round, otherwise false
+     */
     @Test
     public void isBettingRoundFinished()
     {
-
+        Game sut = new Game();
+        sut.startBettingRound();
+        GameRules rules = new GameRules();
+        sut.SetGameRules(rules);
+        BettingRound bettingRound= Mockito.spy(sut.currentBettingRound);
+        GameRules gameRules = Mockito.spy(sut.gameRules);
+        Mockito.when(gameRules.getMaxBetsPerRound()).thenReturn(5);
+        Mockito.when(bettingRound.numberOFBetsMade()).thenReturn(4);
+        assertTrue(sut.isBettingRoundFinished());
     }
 }
