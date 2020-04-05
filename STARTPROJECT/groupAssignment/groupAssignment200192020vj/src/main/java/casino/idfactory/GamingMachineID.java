@@ -17,3 +17,4 @@ public class GamingMachineID extends GeneralID {
         return 0;
     }
 }
+

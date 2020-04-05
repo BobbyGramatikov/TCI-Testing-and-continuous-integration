@@ -3,6 +3,7 @@ package casino.gamingmachine;
 import casino.bet.BetResult;
 import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
+import casino.game.Game;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +17,13 @@ class NoPlayerCardException extends Exception {
 
 public class GamingMachine implements IGamingMachine
 {
-    PlayerCard currentConnectedCard =new PlayerCard();
+    PlayerCard currentConnectedCard = new PlayerCard();
 
-
+    Game  currentGame = new Game();
     @Override
     public boolean placeBet(long amountInCents) throws NoPlayerCardException {
         return false;
+        // place bet
     }
 
     @Override
@@ -34,6 +36,7 @@ public class GamingMachine implements IGamingMachine
         return null;
     }
 
+    //setter don't check
     @Override
     public void connectCard(IPlayerCard card) {
 
