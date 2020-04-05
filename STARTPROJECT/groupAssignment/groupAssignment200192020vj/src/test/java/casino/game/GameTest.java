@@ -82,7 +82,7 @@ public class GameTest {
      */
 
     @Test
-    public void determineWinner()
+    public void Determine_winner_is_calling_AcceptWinner_with_right_parameter()
     {
         BetTokenAuthority auth = Mockito.mock(BetTokenAuthority.class);
         sut.SetBettingAuthority(auth);
@@ -116,7 +116,7 @@ public class GameTest {
      * @return true if all necessary bets are made in the betting round, otherwise false
      */
     @Test
-    public void isBettingRoundFinished()
+    public void IsBettingRoundFinished_Returns_True_when_Bets_more_than_5_and_false_if_less_than_5()
     {
         BettingRound bettingRound= Mockito.mock(BettingRound.class);
         GameRules gameRules = Mockito.mock(GameRules.class);

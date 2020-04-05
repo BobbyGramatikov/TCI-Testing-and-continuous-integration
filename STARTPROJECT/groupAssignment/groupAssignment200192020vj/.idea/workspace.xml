@@ -12,10 +12,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -98,7 +96,7 @@
       <recent name="casino" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.determineWinner">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
@@ -259,8 +257,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameTest.determineWinner" />
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.determineWinner" />
         <item itemvalue="JUnit.GameTest.Start_Betting_Round_Creates_New_Betting_Round_With_New_Id" />
         <item itemvalue="JUnit.GameTest.Accept_Bet_True_When_4_Current_Bets_Placed (1)" />
         <item itemvalue="JUnit.GameTest.Accept_Bet_Throw_No_Current_Round_Exception (1)" />
@@ -377,38 +375,38 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
-    <state width="2517" height="349" key="GridCell.Tab.0.bottom" timestamp="1586116459174">
+    <state width="2517" height="349" key="GridCell.Tab.0.bottom" timestamp="1586117227475">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="349" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586116459174" />
-    <state width="2517" height="349" key="GridCell.Tab.0.center" timestamp="1586116459174">
+    <state width="2517" height="349" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586117227475" />
+    <state width="2517" height="349" key="GridCell.Tab.0.center" timestamp="1586117227475">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="349" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586116459174" />
-    <state width="2517" height="349" key="GridCell.Tab.0.left" timestamp="1586116459174">
+    <state width="2517" height="349" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586117227475" />
+    <state width="2517" height="349" key="GridCell.Tab.0.left" timestamp="1586117227475">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="349" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586116459174" />
-    <state width="2517" height="349" key="GridCell.Tab.0.right" timestamp="1586116459174">
+    <state width="2517" height="349" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586117227475" />
+    <state width="2517" height="349" key="GridCell.Tab.0.right" timestamp="1586117227475">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="349" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586116459174" />
-    <state x="248" y="86" key="MergeDialog" timestamp="1586106057449">
+    <state width="2517" height="349" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586117227475" />
+    <state x="248" y="86" key="MergeDialog" timestamp="1586117016098">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="248" y="86" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586106057449" />
-    <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586106079037">
+    <state x="248" y="86" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586117016098" />
+    <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586117022060">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586106079037" />
-    <state x="1126" y="94" key="SettingsEditor" timestamp="1586086951348">
+    <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586117022060" />
+    <state x="1126" y="94" key="SettingsEditor" timestamp="1586117224837">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586086951348" />
-    <state x="799" y="238" key="VCS.ChangeListViewerDialog" timestamp="1586099480817">
+    <state x="1126" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586117224837" />
+    <state x="799" y="238" key="VCS.ChangeListViewerDialog" timestamp="1586116994684">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="799" y="238" key="VCS.ChangeListViewerDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586099480817" />
+    <state x="799" y="238" key="VCS.ChangeListViewerDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586116994684" />
     <state x="1127" y="441" key="VCS.ChangelistChooser" timestamp="1586099479634">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -425,10 +423,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="39" y="17" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585990568941" />
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586105927313">
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586116996874">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586105927313" />
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586116996874" />
     <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586018911970">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
