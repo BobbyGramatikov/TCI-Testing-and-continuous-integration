@@ -49,6 +49,24 @@ public class PlayerCardTest {
     }
 
     @Test
+    public void generateNewBetIDAddsBetIdToTheSet() {
+        //arrange
+        PlayerCard playerCard = new PlayerCard();
+        BetID mockBetId;
+        boolean expected = true;
+        boolean actual = false;
+
+        //act
+        mockBetId = playerCard.generateNewBetID();
+        if (mockBetId.getClass() == BetID.class){
+            actual = true;
+        }
+        //assert
+        assertEquals("Does not return BetID", expected, actual);
+
+    }
+
+    @Test
     public void returnBetIdsReturnNull() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
@@ -63,6 +81,22 @@ public class PlayerCardTest {
         }
         //assert
         assertEquals("Return betIDs returns null", expected, actual);
+
+    }
+
+    @Test
+    public void getNumberOfBetIds() {
+        //arrange
+        PlayerCard playerCard = new PlayerCard();
+        Set<BetID> mockBetIds;
+        int expected = 0;
+        int actual = -2;
+
+        //act
+        actual = playerCard.getNumberOfBetIDs();
+
+        //assert
+        assertEquals("Get number of bet Ids does not return actual value", expected, actual);
 
     }
 }

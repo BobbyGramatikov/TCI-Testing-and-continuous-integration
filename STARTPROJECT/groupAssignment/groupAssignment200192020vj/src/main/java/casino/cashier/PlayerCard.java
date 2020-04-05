@@ -15,7 +15,8 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public Set<BetID> returnBetIDs() {
-        return null;
+
+        return betIDs;
     }
 
     @Override
@@ -32,7 +33,7 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public int getNumberOfBetIDs() {
-        return 0;
+        return -1;
     }
 
     @Override
