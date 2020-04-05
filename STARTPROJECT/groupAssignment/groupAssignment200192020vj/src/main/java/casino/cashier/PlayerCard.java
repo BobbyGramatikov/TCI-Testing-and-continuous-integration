@@ -1,17 +1,22 @@
 package casino.cashier;
 import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
+import casino.idfactory.BettingRoundID;
 import casino.idfactory.CardID;
+import casino.idfactory.IDFactory;
 
+import java.util.HashSet;
 import java.util.Set;
 
 
 public class PlayerCard implements IPlayerCard {
 
-    public long Id;
+    public CardID cardID;
     private MoneyAmount moneyAmount;
-    private Set<BetID> betIDs;
+    private Set<BetID> betIDs = new HashSet<>();
     BetID betId;
+
+
 
     @Override
     public Set<BetID> returnBetIDs() {
@@ -26,20 +31,25 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public BetID generateNewBetID() {
-        betId = new BetID();
+        IDFactory factory = new IDFactory();
+        betId = (BetID) factory.CreateID("bet");
+
+
 
         return betId;
     }
 
     @Override
     public int getNumberOfBetIDs() {
-        return -1;
+        return betIDs.size();
     }
 
     @Override
     public CardID getCardID() {
         return null;
     }
+
+
 
     @Override
     public MoneyAmount getMoneyAmount() {

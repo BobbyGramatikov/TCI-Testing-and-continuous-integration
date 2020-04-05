@@ -11,7 +11,7 @@ import static org.mockito.Mockito.*;
 
 public class PlayerCardTest {
     @Test
-    public void generateNewBetIdReturnsNull() throws NullPointerException {
+    public void generateNewBetIdReturnsNull() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
         BetID mockBetId;// = playerCard.generateNewBetID();
@@ -58,11 +58,12 @@ public class PlayerCardTest {
 
         //act
         mockBetId = playerCard.generateNewBetID();
-        if (mockBetId.getClass() == BetID.class){
+
+        if (playerCard.getNumberOfBetIDs() == 1){
             actual = true;
         }
         //assert
-        assertEquals("Does not return BetID", expected, actual);
+        assertEquals("Does not add new BetId to set", expected, actual);
 
     }
 
@@ -88,15 +89,14 @@ public class PlayerCardTest {
     public void getNumberOfBetIds() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        Set<BetID> mockBetIds;
         int expected = 0;
-        int actual = -2;
+        int actual = -1;
 
         //act
         actual = playerCard.getNumberOfBetIDs();
 
         //assert
-        assertEquals("Get number of bet Ids does not return actual value", expected, actual);
+        assertEquals("Get number of bet Ids does not return expected value", expected, actual);
 
     }
 }
