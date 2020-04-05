@@ -1,4 +1,5 @@
 package casino.cashier;
+import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
 import casino.idfactory.CardID;
 
@@ -32,4 +33,8 @@ public interface IPlayerCard {
     int getNumberOfBetIDs();
 
     CardID getCardID();
+
+    MoneyAmount getMoneyAmount();
+
+    void setMoneyAmount(MoneyAmount moneyAmount);
 }

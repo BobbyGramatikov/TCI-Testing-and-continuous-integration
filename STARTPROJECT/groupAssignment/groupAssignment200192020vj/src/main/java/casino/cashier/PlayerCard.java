@@ -1,4 +1,5 @@
 package casino.cashier;
+import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
 import casino.idfactory.CardID;
 
@@ -8,6 +9,8 @@ import java.util.Set;
 public class PlayerCard implements IPlayerCard {
 
     public long Id;
+    private MoneyAmount moneyAmount;
+
     @Override
     public Set<BetID> returnBetIDs() {
         return null;
@@ -33,4 +36,13 @@ public class PlayerCard implements IPlayerCard {
         return null;
     }
 
+    @Override
+    public MoneyAmount getMoneyAmount() {
+        return moneyAmount;
+    }
+
+    @Override
+    public void setMoneyAmount(MoneyAmount moneyAmount) {
+        this.moneyAmount = moneyAmount;
+    }
 }

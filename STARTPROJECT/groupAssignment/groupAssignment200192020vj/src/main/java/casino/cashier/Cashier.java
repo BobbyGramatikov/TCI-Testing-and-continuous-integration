@@ -31,6 +31,5 @@ public class Cashier implements ICashier {
 
     @Override
     public void addAmount(IPlayerCard card, MoneyAmount amount) {
-
     }
 }
