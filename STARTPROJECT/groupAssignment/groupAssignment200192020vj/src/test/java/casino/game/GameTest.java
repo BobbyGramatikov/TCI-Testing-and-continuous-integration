@@ -47,7 +47,7 @@ public class GameTest {
         BettingRound currentBettingRound = Mockito.mock(BettingRound.class);
         GamingMachine gamingMachine = Mockito.mock(GamingMachine.class);
         Game sut = new Game(null);
-        assertThat(sut.acceptBet(dummyBet, gamingMachine ), is(false));
+        sut.acceptBet(dummyBet, gamingMachine );
     }
     /**
      * Accept a bet on the current betting round.

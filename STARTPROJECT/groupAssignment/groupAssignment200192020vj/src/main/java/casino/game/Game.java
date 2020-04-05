@@ -26,6 +26,10 @@ public class Game implements IGame {
 
     @Override
     public boolean acceptBet(Bet bet, IGamingMachine gamingMachine) throws NoCurrentRoundException {
+        if (currentBettingRound == null)
+        {
+            throw new NoCurrentRoundException("Please add a round first.");
+        }
         if(currentBettingRound.numberOFBetsMade()<5){
         return true;
         }
