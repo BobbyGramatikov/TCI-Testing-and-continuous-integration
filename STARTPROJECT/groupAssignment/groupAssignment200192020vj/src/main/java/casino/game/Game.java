@@ -51,7 +51,6 @@ public class Game implements IGame {
     {
         Set<Bet> myBets = currentBettingRound.getAllBetsMade();
         BetResult betResultWinner = gameRules.determineWinner(auth.getRandomInteger(currentBettingRound.token) ,myBets);
-        if(betResultWinner!=null)
         gamingMachine.acceptWinner(betResultWinner);
     }
 
