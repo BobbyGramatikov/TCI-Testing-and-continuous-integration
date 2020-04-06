@@ -12,6 +12,7 @@ import org.mockito.internal.matchers.GreaterThan;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
@@ -36,7 +37,6 @@ public class CashierTest {
     public void distributeGamblerCardCallsBLAHandOutGamblingCard() {
         //arrange
         Cashier cashier = new Cashier();
-        //Cashier cashier = spy(Cashier.class);
         BetLoggingAuthority mockBetLoggingAuthority = mock(BetLoggingAuthority.class);
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
         Set<PlayerCard> setOfCards= Mockito.mock(Set.class);
@@ -59,6 +59,7 @@ public class CashierTest {
         Cashier cashier = new Cashier();
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
         MoneyAmount mockMoneyAmount = mock(MoneyAmount.class);
+
         MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
         when(mockPlayerCard.getMoneyAmount()).thenReturn(mockPCMoneyAmount);
 
@@ -67,6 +68,26 @@ public class CashierTest {
 
         //assert
         verify(mockPlayerCard).setMoneyAmount(mockMoneyAmount);
+
+    }
+
+    @Test
+    public void addAmountCallsIncreasesMoneyAmount() {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        MoneyAmount mockMoneyAmount = mock(MoneyAmount.class);
+        MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
+
+        when(mockPlayerCard.getMoneyAmount()).thenReturn(mockPCMoneyAmount);
+
+        //act
+        cashier.addAmount(mockPlayerCard, mockMoneyAmount);
+        long cardCents = mockPCMoneyAmount.getAmountInCents();
+        long amountCents = mockMoneyAmount.getAmountInCents();
+
+        //assert
+        verify(mockMoneyAmount).setAmountInCents(cardCents + amountCents);
 
     }
 
@@ -124,15 +145,15 @@ public class CashierTest {
 
         MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
         mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
-        mockPlayerCard.getMoneyAmount().setAmountInCents(100);
+        //mockPlayerCard.getMoneyAmount().setAmountInCents(100);
 
         MoneyAmount mockBetMoneyAmount = mock(MoneyAmount.class);
         mockBet.setMoneyAmount(mockBetMoneyAmount);
-        mockBet.getMoneyAmount().setAmountInCents(50);
+        //mockBet.getMoneyAmount().setAmountInCents(50);
 
-        //when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn(100l);
-        //when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn(50l);
-
+        doReturn((long) 100).when(mockPlayerCard.getMoneyAmount().getAmountInCents());
+        //when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
+        when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
 
         //act
         cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
@@ -143,5 +164,54 @@ public class CashierTest {
         assertTrue(betMoney <= playerMoney);
         // assertThat("Bet is not valid because bet amount exceeds card amount", betMoney,
                 //new GreaterThan(playerMoney));
+
+    }
+
+    @Test //Need help
+    public void checkIfBetIsValidLowersCardMoneyAmount() throws BetNotExceptedException {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        Bet mockBet = mock(Bet.class);
+
+        MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
+        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
+        //mockPlayerCard.getMoneyAmount().setAmountInCents(100);
+
+        MoneyAmount mockBetMoneyAmount = mock(MoneyAmount.class);
+        mockBet.setMoneyAmount(mockBetMoneyAmount);
+        //mockBet.getMoneyAmount().setAmountInCents(50);
+
+        when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
+        when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
+
+        //act
+
+        //assert
+
+    }
+
+    @Test //Need help
+    public void checkIfBetIsValidThrowsException() throws BetNotExceptedException {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        Bet mockBet = mock(Bet.class);
+
+        MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
+        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
+        //mockPlayerCard.getMoneyAmount().setAmountInCents(100);
+
+        MoneyAmount mockBetMoneyAmount = mock(MoneyAmount.class);
+        mockBet.setMoneyAmount(mockBetMoneyAmount);
+        //mockBet.getMoneyAmount().setAmountInCents(50);
+
+        when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
+        when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
+
+        //act
+
+        //assert
+
     }
 }
