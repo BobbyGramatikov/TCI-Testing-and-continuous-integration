@@ -41,28 +41,4 @@ public class BettingRoundTest {
         //act
         assertNotNull("Return betIDs returns null", bets);
     }
-    /*@test
-    public BettingRound getBettingRoundID() {
-        return null;
-    }
-
-    @Override
-    public boolean placeBet(Bet bet) {
-        return false;
-    }
-
-    @Override
-    public Set<Bet> getAllBetsMade() {
-        return null;
-    }
-
-    @Override
-    public BetToken getBetToken() {
-        return null;
-    }
-
-    @Override
-    public int numberOFBetsMade() {
-        return 0;
-    }*/
 }

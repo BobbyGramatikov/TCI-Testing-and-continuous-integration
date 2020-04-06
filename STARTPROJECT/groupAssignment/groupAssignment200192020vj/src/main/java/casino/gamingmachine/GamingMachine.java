@@ -48,10 +48,12 @@ public class GamingMachine implements IGamingMachine
         boolean result;
         MoneyAmount ma = new MoneyAmount(amountInCents);
 
+
         Bet bet = new Bet(currentConnectedCard.generateNewBetID(),ma);
 
        // BettingRound br = new BettingRound();
        //currentGame.SetBettingRound(br);
+
 
         if(currentGame.acceptBet(bet,this)){
             result = currentGame.currentBettingRound.placeBet(bet);
