@@ -72,7 +72,7 @@ public class CashierTest {
     }
 
     @Test
-    public void addAmountCallsIncreasesMoneyAmount() {
+    public void addAmountIncreasesMoneyAmount() {
         //arrange
         Cashier cashier = new Cashier();
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
@@ -151,14 +151,15 @@ public class CashierTest {
         mockBet.setMoneyAmount(mockBetMoneyAmount);
         //mockBet.getMoneyAmount().setAmountInCents(50);
 
-        doReturn((long) 100).when(mockPlayerCard.getMoneyAmount().getAmountInCents());
+        //doReturn((long) 100).when(mockPlayerCard.getMoneyAmount().getAmountInCents());
         //when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
-        when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
+        //when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
 
         //act
-        cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
         long betMoney = mockBet.getMoneyAmount().getAmountInCents();
         long playerMoney = mockPlayerCard.getMoneyAmount().getAmountInCents();
+
+        cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
 
         //assert
         assertTrue(betMoney <= playerMoney);
@@ -175,19 +176,21 @@ public class CashierTest {
         Bet mockBet = mock(Bet.class);
 
         MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
-        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
-        //mockPlayerCard.getMoneyAmount().setAmountInCents(100);
+        //mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
 
         MoneyAmount mockBetMoneyAmount = mock(MoneyAmount.class);
-        mockBet.setMoneyAmount(mockBetMoneyAmount);
-        //mockBet.getMoneyAmount().setAmountInCents(50);
+        //mockBet.setMoneyAmount(mockBetMoneyAmount);
 
-        when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
-        when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn((long)50);
+        when(mockPlayerCard.getMoneyAmount()).thenReturn(mockPCMoneyAmount);
+        when(mockBet.getMoneyAmount()).thenReturn(mockBetMoneyAmount);
 
         //act
+        cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
+        long mockCardCents = mockPlayerCard.getMoneyAmount().getAmountInCents();
+        long mockBetCents = mockBet.getMoneyAmount().getAmountInCents();
 
         //assert
+        verify(mockPlayerCard.getMoneyAmount()).setAmountInCents(mockCardCents - mockBetCents);
 
     }
 
