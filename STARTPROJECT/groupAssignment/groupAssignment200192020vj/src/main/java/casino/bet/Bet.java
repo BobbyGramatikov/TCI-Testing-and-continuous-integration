@@ -17,7 +17,8 @@ public class Bet extends BetID {
         this.betID = betID;
         this.moneyAmount = moneyAmount;
     }
-@Override
+
+    @Override
     public boolean equals(Object anObject) {
         if (this == anObject)
         return  true;
