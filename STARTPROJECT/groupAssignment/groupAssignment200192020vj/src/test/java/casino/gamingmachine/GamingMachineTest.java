@@ -12,12 +12,15 @@ import casino.cashier.PlayerCard;
 import casino.game.BettingRound;
 import casino.game.Game;
 import casino.game.NoCurrentRoundException;
+import casino.idfactory.BetID;
 import junitparams.JUnitParamsRunner;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.stub;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -36,6 +39,13 @@ public class GamingMachineTest {
     GamingMachine sut;
 
     @Test
+    public void acceptWinner_calls_cashierAmount_when_the_current_game_accepts_the_bet(BetResult winResult) throws{
+        //arrange
+
+        //assert
+    }
+
+    @Test
     public void game_accepts_bet_returns_false_bettingRound_placeBet_returns_false_gameingMachine_placeBet_return_false() throws NoPlayerCardException, NoCurrentRoundException{
         //arrange
         sut = new GamingMachine();
@@ -48,7 +58,6 @@ public class GamingMachineTest {
         sut.placeBet(amountInCents);
         when(sut.currentGame.acceptBet(bet,sut)).thenReturn(false);
         when(sut.currentGame.currentBettingRound.placeBet(bet)).thenReturn(false);
-
         //assert
         assertEquals("We expect a false outcome",false,sut.placeBet(amountInCents));
     }
@@ -129,17 +138,24 @@ public class GamingMachineTest {
     @Test
     public void game_accepts_bet_and_returns_a_value() throws NoPlayerCardException, NoCurrentRoundException {
         //arrange
-        GamingMachine sut = new GamingMachine();
-        GamingMachine gamingMachine = mock(GamingMachine.class);
+        sut = new GamingMachine();
+        GamingMachine gamingMachine = spy(GamingMachine.class);
 
-        Bet bet = mock(Bet.class);
+        Bet bet;
+        BetID bi = new BetID();
+        MoneyAmount ma = new MoneyAmount(amountInCents);
+        bet = new Bet(bi,ma);
+
         Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
 
         //act
         sut.setGame(game);
+        sut.currentGame.currentBettingRound = round;
+
         sut.placeBet(amountInCents);
         //assert
-        verify(game).acceptBet(bet,gamingMachine);
+        verify(game).acceptBet(bet,game.gamingMachine);
     }
 
     @Test
@@ -171,12 +187,10 @@ public class GamingMachineTest {
         Bet bet = mock(Bet.class);
         Game game = mock(Game.class);
         BettingRound round = mock(BettingRound.class);
-        PlayerCard card = mock(PlayerCard.class);
        // game.SetBettingRound(round);
 
         sut.setGame(game);
         sut.currentGame.currentBettingRound = round;
-        sut.currentConnectedCard = card;
 
         //act
         sut.placeBet(amountInCents);

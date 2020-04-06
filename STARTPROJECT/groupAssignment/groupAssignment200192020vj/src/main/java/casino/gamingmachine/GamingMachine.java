@@ -3,11 +3,13 @@ package casino.gamingmachine;
 import casino.bet.Bet;
 import casino.bet.BetResult;
 import casino.bet.MoneyAmount;
+import casino.cashier.Cashier;
 import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
 import casino.game.BettingRound;
 import casino.game.Game;
 import casino.game.NoCurrentRoundException;
+import casino.idfactory.GamingMachineID;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,11 +23,18 @@ class NoPlayerCardException extends Exception {
 
 public class GamingMachine implements IGamingMachine
 {
-    PlayerCard currentConnectedCard = new PlayerCard();
+    PlayerCard currentConnectedCard;
     BettingRound br;
     Game currentGame;
-    public GamingMachine(){
+    private Cashier cashier;
 
+    private GamingMachineID gameingMachineID;
+
+    public GamingMachine(){
+        gameingMachineID = new GamingMachineID();
+    }
+    public void setCashier(Cashier cashier){
+        this.cashier = cashier;
     }
 
     public void setGame(Game game){
@@ -60,17 +69,29 @@ public class GamingMachine implements IGamingMachine
      * clear all open bets on this machine.
      * when the winner has made his bet in this machine: let the Cashier update the amount.
      */
+        try {
+            if(currentGame.acceptBet(winResult.getWinningBet(),this)){
+
+                currentGame.determineWinner();
+
+                MoneyAmount ma = new MoneyAmount(winResult.getAmountWon().getAmountInCents());
+                cashier.addAmount(currentConnectedCard,ma);
+            }
+        } catch (NoCurrentRoundException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @Override
-    public GamingMachine getGamingMachineID() {
-        return casino.gamingmachine.GamingMachine.this;
+    public GamingMachineID getGamingMachineID() {
+        return this.gameingMachineID;
     }
+    //mutable
 
-    //setter don't check
+
     @Override
     public void connectCard(IPlayerCard card) {
-
+           currentConnectedCard = (PlayerCard) card;
     }
 }
