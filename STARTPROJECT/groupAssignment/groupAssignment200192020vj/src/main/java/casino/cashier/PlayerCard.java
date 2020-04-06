@@ -40,7 +40,7 @@ public class PlayerCard implements IPlayerCard {
         Set<BetID> returnBets = betIDs;
         betIDs.clear();
 
-
+        moneyAmount = new MoneyAmount(0);
 
         return returnBets;
     }
