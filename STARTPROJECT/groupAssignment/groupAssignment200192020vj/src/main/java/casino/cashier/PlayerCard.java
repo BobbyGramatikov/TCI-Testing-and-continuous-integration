@@ -18,8 +18,8 @@ public class PlayerCard implements IPlayerCard {
 
     public PlayerCard(){
         IDFactory factory = new IDFactory();
-        cardID = (CardID) factory.CreateID("card");
-        MoneyAmount moneyAmount = new MoneyAmount(0);
+        this.cardID = (CardID) factory.CreateID("card");
+        this.moneyAmount = new MoneyAmount(0);
 
     }
 
@@ -32,17 +32,22 @@ public class PlayerCard implements IPlayerCard {
 
     @Override
     public Set<BetID> returnBetIDs() {
-        return betIDs;
+        Set<BetID> copyBetIDs = new HashSet<>();
+        copyBetIDs.addAll(betIDs);
+
+        return copyBetIDs;
     }
 
     @Override
     public Set<BetID> returnBetIDsAndClearCard() {
-        Set<BetID> returnBets = betIDs;
+        Set<BetID> copyBetIDs = new HashSet<>();
+        copyBetIDs.addAll(betIDs);
+
         betIDs.clear();
 
         moneyAmount = new MoneyAmount(0);
 
-        return returnBets;
+        return copyBetIDs;
     }
 
     @Override

@@ -3,9 +3,11 @@ package casino.cashier;
 import bettingauthoritiyAPI.BetLoggingAuthority;
 import casino.bet.Bet;
 import casino.bet.MoneyAmount;
+import casino.idfactory.BetID;
 import casino.idfactory.CardID;
 import org.junit.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -28,7 +30,7 @@ public class CashierTest {
         assertEquals("Does not add new Card to set", expectedNrOfCards, actualNrOfCards);
     }
 
-    @Test
+    @Test //Doesnt work
     public void distributeGamblerCardCallsBLAHandOutGamblingCard() {
         //arrange
         Cashier cashier = new Cashier();
@@ -74,6 +76,26 @@ public class CashierTest {
 
         //assert
         verify(mockPlayerCard).returnBetIDsAndClearCard();
+    }
+
+    @Test//doesnt work
+    public void returnGamblerCardCallsBLAHandInGamblingCard() {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        BetLoggingAuthority mockBetLoggingAuthority = mock(BetLoggingAuthority.class);
+        CardID mockCardId = mock(CardID.class);
+        Set<BetID> emptySet = new HashSet<>();
+
+        //act
+        when(mockPlayerCard.getCardID()).thenReturn(mockCardId);
+        when(mockPlayerCard.returnBetIDs()).thenReturn(emptySet);
+        //doReturn(mockCardId).when(mockPlayerCard.getCardID());
+        //doReturn(emptySet).when(mockPlayerCard.returnBetIDs());
+        cashier.returnGamblerCard(mockPlayerCard);
+
+        //assert
+        verify(mockBetLoggingAuthority).handInGamblingCard(mockPlayerCard.getCardID(), mockPlayerCard.returnBetIDs());
     }
 
     @Test
