@@ -6,6 +6,8 @@ import casino.bet.MoneyAmount;
 import casino.idfactory.CardID;
 import org.junit.Test;
 
+import java.util.Set;
+
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
@@ -72,6 +74,21 @@ public class CashierTest {
 
         //assert
         verify(mockPlayerCard).returnBetIDsAndClearCard();
+    }
+
+    @Test
+    public void returnGamblerCardRemovesCardFromSetOfDistributedCards() {
+        //arrange
+        Cashier cashier = new Cashier();
+        IPlayerCard playerCard = cashier.distributeGamblerCard();
+        Set<PlayerCard> distributedCards = cashier.getDistributedCards();
+
+        //act
+        cashier.returnGamblerCard(playerCard);
+        boolean contains = distributedCards.contains(playerCard);
+
+        //assert
+        assertEquals("Set of cards still contain the card ID", contains, false);
     }
 
     @Test //Need help
