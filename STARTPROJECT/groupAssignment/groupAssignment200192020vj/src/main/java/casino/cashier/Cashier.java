@@ -51,7 +51,9 @@ public class Cashier implements ICashier {
 
     @Override
     public void addAmount(IPlayerCard card, MoneyAmount amount) {
-        
+        long cardCents = card.getMoneyAmount().getAmountInCents();
+        long amountCents = amount.getAmountInCents();
+        amount.setAmountInCents(cardCents + amountCents);
 
         card.setMoneyAmount(amount);
     }
