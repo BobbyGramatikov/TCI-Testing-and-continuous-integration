@@ -17,14 +17,19 @@ class BetNotExceptedException extends Exception {
 
 
 public class Cashier implements ICashier {
-    Set<PlayerCard> distributedCards = new HashSet<>();
-    BetLoggingAuthority betLoggingAuthority = new BetLoggingAuthority();;
+    private Set<PlayerCard> distributedCards;
+    private BetLoggingAuthority betLoggingAuthority;
+
+    /*public Cashier(Set<PlayerCard> distributedCards, BetLoggingAuthority betLoggingAuthority){
+        this.distributedCards = distributedCards;
+        this.betLoggingAuthority = betLoggingAuthority;
+    }*/
 
     @Override
     public IPlayerCard distributeGamblerCard() {
         PlayerCard playerCard = new PlayerCard();
         distributedCards.add(playerCard);
-        //betLoggingAuthority.handOutGamblingCard(playerCard.getCardID());
+        betLoggingAuthority.handOutGamblingCard(playerCard.getCardID());
 
         return playerCard;
     }
@@ -32,6 +37,7 @@ public class Cashier implements ICashier {
     @Override
     public void returnGamblerCard(IPlayerCard card) {
         distributedCards.remove(card);
+
         betLoggingAuthority.handInGamblingCard(card.getCardID(), card.returnBetIDs());
 
         card.returnBetIDsAndClearCard();
@@ -39,15 +45,15 @@ public class Cashier implements ICashier {
 
     @Override
     public boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck) throws BetNotExceptedException {
-
+        
         return false;
     }
 
     @Override
     public void addAmount(IPlayerCard card, MoneyAmount amount) {
-        //long newMoney = card.getMoneyAmount().getAmountInCents() + amount.getAmountInCents();
-        //MoneyAmount newMoneyAmount = new MoneyAmount(newMoney);
-        amount.setAmountInCents(card.getMoneyAmount().getAmountInCents() + amount.getAmountInCents());
+        long cardCents = card.getMoneyAmount().getAmountInCents();
+        long amountCents = amount.getAmountInCents();
+        amount.setAmountInCents(cardCents + amountCents);
 
         card.setMoneyAmount(amount);
     }
@@ -58,5 +64,13 @@ public class Cashier implements ICashier {
 
     public Set<PlayerCard> getDistributedCards(){
         return distributedCards;
+    }
+
+    public void setDistributedCards(Set<PlayerCard> distributedCards) {
+        this.distributedCards = distributedCards;
+    }
+
+    public void setBetLoggingAuthority(BetLoggingAuthority betLoggingAuthority) {
+        this.betLoggingAuthority = betLoggingAuthority;
     }
 }

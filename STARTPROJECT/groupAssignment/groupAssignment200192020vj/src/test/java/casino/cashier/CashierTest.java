@@ -6,6 +6,7 @@ import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
 import casino.idfactory.CardID;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -30,33 +31,40 @@ public class CashierTest {
         assertEquals("Does not add new Card to set", expectedNrOfCards, actualNrOfCards);
     }
 
-    @Test //Doesnt work
+    @Test //Doesnt work because we dont have access to the inner player card
     public void distributeGamblerCardCallsBLAHandOutGamblingCard() {
         //arrange
         Cashier cashier = new Cashier();
-        Cashier spyCashier = spy(Cashier.class);
+        //Cashier cashier = spy(Cashier.class);
         BetLoggingAuthority mockBetLoggingAuthority = mock(BetLoggingAuthority.class);
-        IPlayerCard mockIPlayerCard = mock(IPlayerCard.class);
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        Set<PlayerCard> setOfCards= Mockito.mock(Set.class);
+        CardID mockId = mock(CardID.class);
+        //mockId.CreateID();
+        when(mockPlayerCard.getCardID()).thenReturn(mockId);
 
         //act
-        //doReturn(mockIPlayerCard).when(spyCashier).distributeGamblerCard();
-        spyCashier.distributeGamblerCard();
+        cashier.setBetLoggingAuthority(mockBetLoggingAuthority);
+        cashier.setDistributedCards(setOfCards);
+        cashier.distributeGamblerCard();
 
         //assert
-        verify(mockBetLoggingAuthority).handOutGamblingCard(mockIPlayerCard.getCardID());
+        verify(mockBetLoggingAuthority).handOutGamblingCard(mockPlayerCard.getCardID());
     }
 
-    @Test//Doesnt work
+    @Test
     public void addAmountCallsSetMoneyAmount() {
         //arrange
         Cashier cashier = new Cashier();
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
-        MoneyAmount mockMoneyAmount = spy(MoneyAmount.class);
+        MoneyAmount mockMoneyAmount = mock(MoneyAmount.class);
+        MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
+        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
+        when(mockPlayerCard.getMoneyAmount()).thenReturn(mockPCMoneyAmount);
 
         //act
-        //when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
-        doReturn(mockMoneyAmount).when(mockMoneyAmount).setAmountInCents(5);
-        //when(mockMoneyAmount.getAmountInCents()).thenReturn((long)20);
+        when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
+        when(mockMoneyAmount.getAmountInCents()).thenReturn((long)20);
 
         cashier.addAmount(mockPlayerCard, mockMoneyAmount);
 
@@ -78,20 +86,17 @@ public class CashierTest {
         verify(mockPlayerCard).returnBetIDsAndClearCard();
     }
 
-    @Test//doesnt work
+    @Test
     public void returnGamblerCardCallsBLAHandInGamblingCard() {
         //arrange
         Cashier cashier = new Cashier();
-        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        IPlayerCard mockPlayerCard = mock(IPlayerCard.class);
         BetLoggingAuthority mockBetLoggingAuthority = mock(BetLoggingAuthority.class);
-        CardID mockCardId = mock(CardID.class);
-        Set<BetID> emptySet = new HashSet<>();
+        cashier.setBetLoggingAuthority(mockBetLoggingAuthority);
+        Set<PlayerCard> setOfCards = Mockito.mock(Set.class);
+        cashier.setDistributedCards(setOfCards);
 
         //act
-        when(mockPlayerCard.getCardID()).thenReturn(mockCardId);
-        when(mockPlayerCard.returnBetIDs()).thenReturn(emptySet);
-        //doReturn(mockCardId).when(mockPlayerCard.getCardID());
-        //doReturn(emptySet).when(mockPlayerCard.returnBetIDs());
         cashier.returnGamblerCard(mockPlayerCard);
 
         //assert
