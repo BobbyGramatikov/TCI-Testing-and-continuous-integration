@@ -23,7 +23,7 @@ public class CashierTest {
         actualNrOfCards = cashier.getNumberOfDistributedCards();
 
         //assert
-        assertEquals("Does not add new BetId to set", expectedNrOfCards, actualNrOfCards);
+        assertEquals("Does not add new Card to set", expectedNrOfCards, actualNrOfCards);
     }
 
     @Test
