@@ -36,7 +36,7 @@ public class PlayerCard implements IPlayerCard {
     @Override
     public BetID generateNewBetID() {
         IDFactory factory = new IDFactory();
-        betId = (BetID) factory.CreateID("bet");
+        betId = (BetID) factory.CreateID("casino.game.CardID");
 
         betIDs.add(betId);
 

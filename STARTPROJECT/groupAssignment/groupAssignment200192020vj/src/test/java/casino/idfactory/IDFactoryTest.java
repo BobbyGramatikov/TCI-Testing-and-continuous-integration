@@ -14,10 +14,10 @@ public class IDFactoryTest {
 
     private static final Object[] FactoryGeneralIdTypes() {
         return new Object[] {
-                new Object[] {"bet",new BetID()},
-                new Object[] {"round",new BettingRoundID()},
-                new Object[] {"machine",new GamingMachineID()},
-                new Object[] {"card",new CardID()}
+                new Object[] {"casino.idfactory.BettingRoundID",new BettingRoundID()},
+                new Object[] {"casino.idfactory.BetID",new BetID()},
+                new Object[] {"casino.idfactory.GamingMachineID",new GamingMachineID()},
+                new Object[] {"casino.idfactory.CardID",new CardID()}
         };
     }
 
@@ -28,24 +28,24 @@ public class IDFactoryTest {
         //arrange
         IDFactory factory = new IDFactory();
         //act
-        GeneralID subclass = factory.CreateID(types);
+        GeneralID subclass = (GeneralID) factory.CreateID(types);
         //assert
-        assertThat(subclass, instanceOf(classType.getClass())); // returns type Generic ID
+        assertThat("Creation of all unique different ID classes from the ID factory",subclass, instanceOf(classType.getClass())); // returns type Generic ID
     }
 
     @Test
     public void Factory_Is_Given_Invalid_Type_For_General_ID()
     {
         IDFactory factory = new IDFactory();
-        GeneralID subclass = factory.CreateID("teacher");
-        assertThat(subclass, is(nullValue())); // returns type Generic ID
+        GeneralID subclass = (GeneralID) factory.CreateID("teacher");
+        assertThat("Invalid Types are failing, by giving null",subclass, is(nullValue())); // returns type Generic ID
     }
 
     @Test
     public void On_New_Type_Created_Id_Is_Not_Null()
     {
         IDFactory factory = new IDFactory();
-        BettingRoundID subclass = (BettingRoundID) factory.CreateID("round");
-        assertThat(subclass.GetID(), is(notNullValue()));
+        BettingRoundID subclass = (BettingRoundID) factory.CreateID("casino.idfactory.BettingRoundID");
+        assertThat("ID constructor works fine when new type is created",subclass.GetID(), is(notNullValue()));
     }
 }

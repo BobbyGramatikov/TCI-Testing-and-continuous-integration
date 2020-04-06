@@ -1,5 +1,7 @@
 package casino.bet;
 
+import casino.game.BettingRound;
+
 /**
  * Immutable class.
  * contains the Bet which won, together with the amount won.
@@ -22,5 +24,7 @@ public class BetResult
     public MoneyAmount getAmountWon() {
         return amountWon;
     }
+
+
 }
 
