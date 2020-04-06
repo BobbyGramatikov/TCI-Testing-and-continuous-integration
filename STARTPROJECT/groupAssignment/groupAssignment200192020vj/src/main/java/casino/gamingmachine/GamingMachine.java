@@ -50,8 +50,8 @@ public class GamingMachine implements IGamingMachine
 
         Bet bet = new Bet(currentConnectedCard.generateNewBetID(),ma);
 
-//        BettingRound br = new BettingRound();
-//        currentGame.SetBettingRound(br);
+       // BettingRound br = new BettingRound();
+       //currentGame.SetBettingRound(br);
 
         if(currentGame.acceptBet(bet,this)){
             result = currentGame.currentBettingRound.placeBet(bet);
@@ -59,12 +59,11 @@ public class GamingMachine implements IGamingMachine
         }
 
         return false;
-
     }
 
     @Override
     public void acceptWinner(BetResult winResult) {
-//call method game
+    //call method game
      /* Accept the BetResult from the winner.
      * clear all open bets on this machine.
      * when the winner has made his bet in this machine: let the Cashier update the amount.
