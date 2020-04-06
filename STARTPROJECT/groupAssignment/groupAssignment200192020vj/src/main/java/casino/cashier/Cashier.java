@@ -31,7 +31,7 @@ public class Cashier implements ICashier {
 
     @Override
     public void returnGamblerCard(IPlayerCard card) {
-
+        distributedCards.remove(card);
         card.returnBetIDsAndClearCard();
     }
 
