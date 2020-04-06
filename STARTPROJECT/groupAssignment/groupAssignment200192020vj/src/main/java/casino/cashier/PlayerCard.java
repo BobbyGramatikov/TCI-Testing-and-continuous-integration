@@ -1,4 +1,5 @@
 package casino.cashier;
+import casino.bet.Bet;
 import casino.bet.MoneyAmount;
 import casino.idfactory.BetID;
 import casino.idfactory.BettingRoundID;
@@ -16,21 +17,48 @@ public class PlayerCard implements IPlayerCard {
     private Set<BetID> betIDs = new HashSet<>();
     BetID betId;
 
+    @Override
+    public boolean equals(Object anObject) {
+        if (anObject instanceof PlayerCard) {
+            PlayerCard playerCard = (PlayerCard) anObject;
+            return playerCard.getCardID().equals(getCardID())
+                    && getCardID().GetID() == playerCard.getCardID().GetID();
+        }
+        return false;
+    }
 
+    public PlayerCard(){
+        IDFactory factory = new IDFactory();
+        this.cardID = (CardID) factory.CreateID("card");
+        this.moneyAmount = new MoneyAmount(0);
+
+    }
+
+    public PlayerCard(MoneyAmount moneyAmount){
+        IDFactory factory = new IDFactory();
+        cardID = (CardID) factory.CreateID("card");
+
+        this.moneyAmount = moneyAmount;
+    }
 
     @Override
     public Set<BetID> returnBetIDs() {
-        return betIDs;
+        Set<BetID> copyBetIDs = new HashSet<>();
+        copyBetIDs.addAll(betIDs);
+
+        return copyBetIDs;
     }
 
     @Override
     public Set<BetID> returnBetIDsAndClearCard() {
-        Set<BetID> returnBets = betIDs;
+        Set<BetID> copyBetIDs = new HashSet<>();
+        copyBetIDs.addAll(betIDs);
+
         betIDs.clear();
 
+        moneyAmount = new MoneyAmount(0);
 
-
-        return returnBets;
+        return copyBetIDs;
     }
 
     @Override

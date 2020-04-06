@@ -15,6 +15,16 @@ public class Bet extends BetID {
         this.moneyAmount = moneyAmount;
     }
 
+    @Override
+    public boolean equals(Object anObject) {
+        if (this == anObject)
+        return  true;
+    if(anObject == null || getClass() != anObject.getClass())
+        return  false;
+    Bet bet = (Bet) anObject;
+    return betID == (bet.getBetID());
+    }
+
     public BetID getBetID() {
         return betID;
     }
@@ -23,13 +33,7 @@ public class Bet extends BetID {
         return moneyAmount;
     }
 
-    @Override
-    public boolean equals(Object anObject) {
-        if (this == anObject)
-            return  true;
-        if(anObject == null || getClass() != anObject.getClass())
-            return  false;
-        Bet bet = (Bet) anObject;
-        return betID == (bet.getBetID());
+    public void setMoneyAmount(MoneyAmount moneyAmount) {
+        this.moneyAmount = moneyAmount;
     }
 }

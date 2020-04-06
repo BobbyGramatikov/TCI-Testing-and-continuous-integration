@@ -14,19 +14,13 @@ public class PlayerCardTest {
     public void generateNewBetIdReturnsNull() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        BetID mockBetId;// = playerCard.generateNewBetID();
-        boolean expected = false;
-        boolean actual = false;
-        //doReturn(mockBetId).when(playerCard).generateNewBetID(); !Player card should be spy
+        BetID mockBetId;
 
         //act
         mockBetId = playerCard.generateNewBetID();
-        if (mockBetId == null){
-            actual = true;
-        }
 
         //assert
-        assertEquals("Generating an ID returns Null", expected, actual);
+        assertNotNull("Generating an ID returns Null", mockBetId);
 
     }
 
@@ -35,35 +29,27 @@ public class PlayerCardTest {
         //arrange
         PlayerCard playerCard = new PlayerCard();
         BetID mockBetId;
-        boolean expected = true;
-        boolean actual = false;
 
         //act
         mockBetId = playerCard.generateNewBetID();
-        if (mockBetId.getClass() == BetID.class){
-            actual = true;
-        }
-        //assert
-        assertEquals("Does not return BetID", expected, actual);
 
+        //assert
+        assertEquals("Does not return BetID", mockBetId.getClass(), BetID.class);
     }
 
     @Test
     public void generateNewBetIDAddsBetIdToTheSet() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        BetID mockBetId;
-        boolean expected = true;
-        boolean actual = false;
+        int expectedNrOfBets = 1;
+        int actualNrOfBets;
 
         //act
-        mockBetId = playerCard.generateNewBetID();
+        playerCard.generateNewBetID();
+        actualNrOfBets = playerCard.getNumberOfBetIDs();
 
-        if (playerCard.getNumberOfBetIDs() == 1){
-            actual = true;
-        }
         //assert
-        assertEquals("Does not add new BetId to set", expected, actual);
+        assertEquals("Does not add new BetId to set", expectedNrOfBets, actualNrOfBets);
 
     }
 
@@ -72,16 +58,12 @@ public class PlayerCardTest {
         //arrange
         PlayerCard playerCard = new PlayerCard();
         Set<BetID> mockBetIds;
-        boolean expected = true;
-        boolean actual = true;
 
         //act
         mockBetIds = playerCard.returnBetIDs();
-        if (mockBetIds == null){
-            actual = false;
-        }
+
         //assert
-        assertEquals("Return betIDs returns null", expected, actual);
+        assertNotNull("Return betIDs returns null", mockBetIds);
 
     }
 
@@ -89,40 +71,33 @@ public class PlayerCardTest {
     public void returnBetIdsAndClearCard() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        boolean expected = true;
-        boolean actual = true;
+        int betCountExpected = 0;
 
         //act
         playerCard.generateNewBetID();
-        int betCountBefore = 1;
         playerCard.returnBetIDsAndClearCard();
         int betCountAfter = playerCard.getNumberOfBetIDs();
-        if (betCountBefore == betCountAfter){
-            actual = false;
-        }
+
         //assert
-        assertEquals("returnBetIdsAndClearCard does not clear the card", expected, actual);
+        assertEquals("returnBetIdsAndClearCard does not clear the card", betCountExpected, betCountAfter);
 
     }
 
-    /*@Test
+    @Test
     public void returnBetIdsAndClearCardSetMoneyToZero() {
         //arrange
-        PlayerCard playerCard = new PlayerCard();
-        boolean expected = true;
-        boolean actual = true;
+        MoneyAmount moneyAmount = mock(MoneyAmount.class);
+        PlayerCard playerCard = new PlayerCard(moneyAmount);
+        long expectedMoney = 0;
 
         //act
-
+        when(playerCard.getMoneyAmount().getAmountInCents()).thenReturn((long) 100);
         playerCard.generateNewBetID();
-        int betCountBefore = 1;
         playerCard.returnBetIDsAndClearCard();
-        int betCountAfter = playerCard.getNumberOfBetIDs();
-        if (betCountBefore == betCountAfter){
-            actual = false;
-        }
-        //assert
-        assertEquals("returnBetIdsAndClearCard does not clear the card", expected, actual);
+        long actualMoney = playerCard.getMoneyAmount().getAmountInCents();
 
-    }*/
+        //assert
+        assertEquals("returnBetIdsAndClearCard does not clear the card", expectedMoney, actualMoney);
+
+    }
 }

@@ -2,6 +2,8 @@ package casino.gamingmachine;
 
 import casino.bet.BetResult;
 import casino.cashier.IPlayerCard;
+import casino.game.NoCurrentRoundException;
+import casino.idfactory.GamingMachineID;
 
 public interface IGamingMachine {
     /**
@@ -9,7 +11,7 @@ public interface IGamingMachine {
      * @param amountInCents
      * @return
      */
-    boolean placeBet(long amountInCents) throws NoPlayerCardException;
+    boolean placeBet(long amountInCents) throws NoPlayerCardException, NoCurrentRoundException;
 
     /**
      * Accept the BetResult from the winner.
@@ -23,7 +25,7 @@ public interface IGamingMachine {
      * getter
      * @return gamingmachineID
      */
-    GamingMachine getGamingMachineID();
+    GamingMachineID getGamingMachineID();
 
     /**
      * connect card to this gaming machine

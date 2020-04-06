@@ -2,22 +2,27 @@ package casino.gamingmachine;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 
 import casino.Casino;
 import casino.bet.Bet;
 import casino.bet.BetResult;
 import casino.bet.MoneyAmount;
+import casino.cashier.Cashier;
 import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
 import casino.game.BettingRound;
 import casino.game.Game;
 import casino.game.NoCurrentRoundException;
+import casino.idfactory.BetID;
 import junitparams.JUnitParamsRunner;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.stub;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -33,185 +38,141 @@ public class GamingMachineTest {
 
 
     long amountInCents = 1;
+    GamingMachine sut;
 
-
-    public void game_accepts_bet_returns_false_gameingMachine_placeBet_return_false() throws NoPlayerCardException, NoCurrentRoundException{
-        //arrange
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-        when(sut.currentGame.acceptBet(bet,sut)).thenReturn(false);
-        when(sut.currentGame.currentBettingRound.placeBet(bet)).thenReturn(false);
-
-        //assert
-        assertEquals("We expect a false outcome",false,sut.placeBet(amountInCents));
-    }
-    public void bettingRound_placeBet_returns_false_gameingMachine_placeBet_return_false() throws NoPlayerCardException, NoCurrentRoundException{
-        //arrange
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-        when(sut.currentGame.currentBettingRound.placeBet(bet)).thenReturn(false);
-
-        //assert
-        assertEquals("We expect a false outcome",false,sut.placeBet(amountInCents));
-    }
-
-    public void game_accepts_bet_returns_false_bettingRound_placeBet_returns_false_gameingMachine_placeBet_return_false() throws NoPlayerCardException, NoCurrentRoundException{
-        //arrange
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-        when(sut.currentGame.acceptBet(bet,sut)).thenReturn(false);
-        when(sut.currentGame.currentBettingRound.placeBet(bet)).thenReturn(false);
-
-        //assert
-        assertEquals("We expect a false outcome",false,sut.placeBet(amountInCents));
-    }
+    @Test
     public void game_accepts_bet_returns_true_bettingRound_should_call_placeBet_once() throws NoPlayerCardException, NoCurrentRoundException{
+
         //arrange
-        Game game = mock(Game.class);
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-        when(game.acceptBet(bet,sut)).thenReturn(true);
-
-        //assert
-        verify(sut,times(1)).currentGame.currentBettingRound.placeBet(bet);
-    }
-    public void game_accepts_bet_and_returns_false_bettingRound_should_not_call_placeBet() throws NoPlayerCardException, NoCurrentRoundException{
-        //arrange
-        Game game = mock(Game.class);
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-        when(game.acceptBet(bet,sut)).thenReturn(false);
-
-        //assert
-        verify(sut,never()).currentGame.currentBettingRound.placeBet(bet);
-    }
-
-//    public void game_accepts_bet_and_returns_true() throws NoPlayerCardException, NoCurrentRoundException {
-//        //arrange
-//        GamingMachine gamingMachine = new GamingMachine();
-//        IPlayerCard playerCard = new PlayerCard();
-//
-//        BettingRound bettingRound = mock(BettingRound.class);
-//        Game game = mock(Game.class);
-//
-//        Casino casino = mock(Casino.class);
-//        Bet bet = mock(Bet.class);
-//
-//        GamingMachine sut = new GamingMachine();
-//        sut.placeBet(amountInCents);
-//        //3.7
-//        //68 then() arrage
-//        when(game.acceptBet(bet,gamingMachine)).thenThrow(new NoCurrentRoundException);
-//        //
-//        game.currentBettingRound = gamingMachine.currentGame.currentBettingRound;
-//        verify(game.acceptBet(bet,gamingMachine));
-//
-//        verify(bettingRound.placeBet(bet)).booleanValue();
-//
-//        //act
-//        gamingMachine.connectCard(playerCard);
-//        gamingMachine.placeBet(amountInCents);
-//        gamingMachine.acceptWinner(winResult);
-//
-//        when(game.acceptBet(bet,gamingMachine).thenReturn )
-//        //gamingMachine.getGamingMachineID();
-//
-//        //assert
-//
-//        assertEquals(1,playerCard.getNumberOfBetIDs());
-//        assertEquals(1,playerCard.returnBetIDs());
-//
-//    }
-
-
-    //checks if the
-    @Test
-    public void game_accepts_bet_and_returns_a_value() throws NoPlayerCardException, NoCurrentRoundException {
-        //arrange
-        Game game = mock(Game.class);
-        Bet bet = mock(Bet.class);
-
-        GamingMachine sut = new GamingMachine();
-        //act
-        sut.placeBet(amountInCents);
-
-        //assert
-        verify((game).acceptBet(bet,sut));
-    }
-
-    @Test
-    public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException {
-        //arrange
-        //GamingMachine sut = mock(GamingMachine.class);
-        GamingMachine sut = new GamingMachine();
-
+        sut = new GamingMachine();
         Bet bet = mock(Bet.class);
         Game game = mock(Game.class);
         BettingRound round = mock(BettingRound.class);
         PlayerCard card = mock(PlayerCard.class);
-       // game.SetBettingRound(round);
 
+        //act
         sut.setGame(game);
         sut.currentGame.currentBettingRound = round;
         sut.currentConnectedCard = card;
+        sut.placeBet(amountInCents);
 
+        //assert
+        when(game.acceptBet(bet,sut)).thenReturn(true);
+        verify(game,times(1)).currentBettingRound.placeBet(bet);
+    }
+    @Test
+    public void game_accepts_bet_and_returns_false_placeBet_should_not_be_called() throws NoPlayerCardException, NoCurrentRoundException{
+
+        //arrange
+        sut = new GamingMachine();
+        Bet bet = mock(Bet.class);
+        Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
+        PlayerCard card = mock(PlayerCard.class);
 
         //act
+        sut.setGame(game);
+        sut.currentGame.currentBettingRound = round;
+        sut.currentConnectedCard = card;
         sut.placeBet(amountInCents);
-        //assert
 
+        //assert
+        when(game.acceptBet(bet,sut)).thenReturn(false);
+        verify(game,never()).currentBettingRound.placeBet(bet);
+    }
+
+    @Test
+    public void bettingRound_placeBet_returns_false_gameingMachine_placeBet_return_false() throws NoPlayerCardException, NoCurrentRoundException{
+
+        //arrange
+        sut = new GamingMachine();
+        Bet bet = mock(Bet.class);
+        Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
+        PlayerCard card = mock(PlayerCard.class);
+
+        //act
+        sut.setGame(game);
+        sut.currentGame.currentBettingRound = round;
+        sut.currentConnectedCard = card;
+        sut.placeBet(amountInCents);
+
+        //assert
+        when(sut.currentGame.currentBettingRound.placeBet(bet)).thenReturn(false);
+        assertFalse("We expect a false outcome", sut.placeBet(amountInCents));
+    }
+    @Test
+    public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException, NoCurrentRoundException {
+
+        //arrange
+        sut = new GamingMachine();
+        Bet bet = mock(Bet.class);
+        Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
+        PlayerCard card = mock(PlayerCard.class);
+
+        //act
+        sut.currentConnectedCard = card;
+        sut.setGame(game);
+        sut.currentGame.currentBettingRound = round;
+        sut.placeBet(amountInCents);
+
+        //assert
         verify(game).currentBettingRound.placeBet(bet);
     }
 
     @Test
-    public void amount_is_negative_should_return_false_PASS() {
+    public void accept_winner_does_not_call_cashier_to_update_when_game_acceptBet_returns_false() throws NoCurrentRoundException {
 
-    }
-    @Test
-    public void amount_is_positive_should_return_true_PASS() {
+        //arrange
+        sut = new GamingMachine();
+        Bet bet = mock(Bet.class);
+        BetResult betResult = mock(BetResult.class);
+        Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
+        PlayerCard card = mock(PlayerCard.class);
+        Cashier cashier = mock(Cashier.class);
+        MoneyAmount ma = mock(MoneyAmount.class);
 
-    }
-    @Test
-    public void amount_on_card_is_64_cents_PASS() {
+        //act
+        sut.currentConnectedCard = card;
+        sut.setGame(game);
+        sut.setCashier(cashier);
+        sut.currentGame.currentBettingRound = round;
+        //assert
 
-    }
-    //accept winner
-    @Test
-    public void bet_placed_by_winner_should_be_accepted_PASS() {
-
-    }
-    @Test
-    public void bet_placed_by_nonWinner_should_not_be_accepted_PASS() {
-
-    }
-    @Test
-    public void amount_of_bets_on_machine_should_be_0_PASS() {
-
-    }
-    @Test
-    public void winner_has_made_bet_amountOfBets_should_be_1_PASS() {
-
-    }
-    //connected card
-    @Test
-    public void should_return_card_id_PASS() {
-
+        sut.acceptWinner(betResult);
+        when(game.acceptBet(bet,sut)).thenReturn(false);
+        verify(cashier,never()).addAmount(card,ma);
     }
 
+    /*&@Test
+    public void when_acceptWinner_is_called_acceptBet_must_be_called() throws NoCurrentRoundException {
+
+        //arrange
+        GamingMachine gm = mock(GamingMachine.class);
+        sut = new GamingMachine();
+        BetResult betResult = mock(BetResult.class);
+        Game game = mock(Game.class);
+        BettingRound round = mock(BettingRound.class);
+        PlayerCard card = mock(PlayerCard.class);
+        Cashier cashier = mock(Cashier.class);
+        MoneyAmount ma = new MoneyAmount(amountInCents);
+        Bet bet = mock(Bet.class);
+        bet.setMoneyAmount(ma);
+
+        //act
+        sut.currentConnectedCard = card;
+        game.gamingMachine = gm;
+        sut.setGame(game);
+        sut.setCashier(cashier);
+        sut.currentGame.currentBettingRound = round;
+        //assert
+
+        sut.acceptWinner(betResult);
+        when(game.acceptBet(bet,sut)).thenReturn(false);
+        verify(game).acceptBet(bet,game.gamingMachine);
+    }
+    */
 
 }
