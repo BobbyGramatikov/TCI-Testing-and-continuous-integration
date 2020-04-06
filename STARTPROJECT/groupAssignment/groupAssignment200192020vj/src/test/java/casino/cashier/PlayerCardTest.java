@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 public class PlayerCardTest {
+    //Change IF's to Asserts
+
     @Test
     public void generateNewBetIdReturnsNull() {
         //arrange
@@ -105,24 +107,20 @@ public class PlayerCardTest {
 
     }
 
-    /*@Test
+    @Test
     public void returnBetIdsAndClearCardSetMoneyToZero() {
         //arrange
-        PlayerCard playerCard = new PlayerCard();
-        boolean expected = true;
-        boolean actual = true;
+        MoneyAmount moneyAmount = new MoneyAmount(100);
+        PlayerCard playerCard = new PlayerCard(moneyAmount);
+        long expectedMoney = 0;
 
         //act
 
         playerCard.generateNewBetID();
-        int betCountBefore = 1;
         playerCard.returnBetIDsAndClearCard();
-        int betCountAfter = playerCard.getNumberOfBetIDs();
-        if (betCountBefore == betCountAfter){
-            actual = false;
-        }
+        long actualMoney = playerCard.getMoneyAmount().getAmountInCents();
         //assert
-        assertEquals("returnBetIdsAndClearCard does not clear the card", expected, actual);
+        assertEquals("returnBetIdsAndClearCard does not clear the card", expectedMoney, actualMoney);
 
-    }*/
+    }
 }

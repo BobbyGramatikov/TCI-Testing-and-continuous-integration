@@ -16,7 +16,8 @@ public class Cashier implements ICashier {
 
     @Override
     public IPlayerCard distributeGamblerCard() {
-        return null;
+        PlayerCard playerCard = new PlayerCard();
+        return playerCard;
     }
 
     @Override
@@ -26,11 +27,15 @@ public class Cashier implements ICashier {
 
     @Override
     public boolean checkIfBetIsValid(IPlayerCard card, Bet betToCheck) throws BetNotExceptedException {
+
         return false;
     }
 
     @Override
     public void addAmount(IPlayerCard card, MoneyAmount amount) {
-        card.setMoneyAmount(amount);
+        long newMoney = card.getMoneyAmount().getAmountInCents() + amount.getAmountInCents();
+        MoneyAmount newMoneyAmount = new MoneyAmount(newMoney);
+
+        card.setMoneyAmount(newMoneyAmount);
     }
 }

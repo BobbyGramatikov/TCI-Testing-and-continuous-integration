@@ -1,5 +1,6 @@
 package casino.cashier;
 
+import casino.bet.Bet;
 import casino.bet.MoneyAmount;
 import org.junit.Test;
 
@@ -33,5 +34,18 @@ public class CashierTest {
 
         //assert
         verify(mockPlayerCard).returnBetIDsAndClearCard();
+    }
+
+    @Test
+    public void checkIfBetIsValid() {
+        //arrange
+        Cashier cashier = new Cashier();
+        PlayerCard mockPlayerCard = mock(PlayerCard.class);
+        Bet mockBet = mock(Bet.class);
+        //act
+        //cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
+
+        //assert
+        //verify(mockPlayerCard).returnBetIDsAndClearCard();
     }
 }

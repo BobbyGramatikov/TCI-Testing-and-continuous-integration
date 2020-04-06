@@ -16,7 +16,19 @@ public class PlayerCard implements IPlayerCard {
     private Set<BetID> betIDs = new HashSet<>();
     BetID betId;
 
+    public PlayerCard(){
+        IDFactory factory = new IDFactory();
+        cardID = (CardID) factory.CreateID("card");
+        MoneyAmount moneyAmount = new MoneyAmount(0);
 
+    }
+
+    public PlayerCard(MoneyAmount moneyAmount){
+        IDFactory factory = new IDFactory();
+        cardID = (CardID) factory.CreateID("card");
+
+        this.moneyAmount = moneyAmount;
+    }
 
     @Override
     public Set<BetID> returnBetIDs() {
