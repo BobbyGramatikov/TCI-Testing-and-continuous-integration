@@ -1,5 +1,6 @@
 package casino.game;
 
+import bettingauthoritiyAPI.BetLoggingAuthority;
 import bettingauthoritiyAPI.BetToken;
 import casino.Casino;
 import casino.bet.Bet;
@@ -14,6 +15,8 @@ public class BettingRound implements IBettingRound {
     BettingRoundID id;
     BetToken token;
     Set<Bet> bets;
+    int numberOfBetsMade;
+    private BettingRound currentBettingRound;
 
     public BettingRound(BetToken token)
     {
@@ -21,22 +24,27 @@ public class BettingRound implements IBettingRound {
         id = (BettingRoundID) factory.CreateID("round");
         this.token =token;
         bets = new HashSet<>();
-    }
-    @Override
-    public BettingRound getBettingRoundID() {
-        return null;
+        BettingRoundID bettingRoundID = new BettingRoundID();
+        BetToken betToken = new BetToken(bettingRoundID);
+        currentBettingRound = new BettingRound(betToken);
     }
 
+    @Override
+    public BettingRound getBettingRoundID() {
+        BetLoggingAuthority BLA = new BetLoggingAuthority();
+        BLA.startBettingRound(currentBettingRound);
+        return currentBettingRound;
+    }
 
     @Override
     public boolean placeBet(Bet bet) {
-        return false;
+        bets.add(bet);
+        numberOfBetsMade++;
+        return true;
     }
-
-
     @Override
     public Set<Bet> getAllBetsMade() {
-        return null;
+        return bets;
     }
 
     @Override
@@ -46,6 +54,6 @@ public class BettingRound implements IBettingRound {
 
     @Override
     public int numberOFBetsMade() {
-        return 0;
+        return numberOfBetsMade;
     }
 }
