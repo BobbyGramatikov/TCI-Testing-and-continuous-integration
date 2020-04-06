@@ -7,6 +7,7 @@ import casino.idfactory.BetID;
 import casino.idfactory.CardID;
 import org.junit.Test;
 import org.mockito.Mockito;
+import org.mockito.internal.matchers.GreaterThan;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -59,13 +60,9 @@ public class CashierTest {
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
         MoneyAmount mockMoneyAmount = mock(MoneyAmount.class);
         MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
-        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
         when(mockPlayerCard.getMoneyAmount()).thenReturn(mockPCMoneyAmount);
 
         //act
-        when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn((long)100);
-        when(mockMoneyAmount.getAmountInCents()).thenReturn((long)20);
-
         cashier.addAmount(mockPlayerCard, mockMoneyAmount);
 
         //assert
@@ -119,15 +116,32 @@ public class CashierTest {
     }
 
     @Test //Need help
-    public void checkIfBetIsValid() {
+    public void checkIfBetIsValid() throws BetNotExceptedException {
         //arrange
         Cashier cashier = new Cashier();
         PlayerCard mockPlayerCard = mock(PlayerCard.class);
         Bet mockBet = mock(Bet.class);
+
+        MoneyAmount mockPCMoneyAmount = mock(MoneyAmount.class);
+        mockPlayerCard.setMoneyAmount(mockPCMoneyAmount);
+        mockPlayerCard.getMoneyAmount().setAmountInCents(100);
+
+        MoneyAmount mockBetMoneyAmount = mock(MoneyAmount.class);
+        mockBet.setMoneyAmount(mockBetMoneyAmount);
+        mockBet.getMoneyAmount().setAmountInCents(50);
+
+        //when(mockBet.getMoneyAmount().getAmountInCents()).thenReturn(100l);
+        //when(mockPlayerCard.getMoneyAmount().getAmountInCents()).thenReturn(50l);
+
+
         //act
-        //cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
+        cashier.checkIfBetIsValid(mockPlayerCard, mockBet);
+        long betMoney = mockBet.getMoneyAmount().getAmountInCents();
+        long playerMoney = mockPlayerCard.getMoneyAmount().getAmountInCents();
 
         //assert
-        //verify(mockPlayerCard).returnBetIDsAndClearCard();
+        assertTrue(betMoney <= playerMoney);
+        // assertThat("Bet is not valid because bet amount exceeds card amount", betMoney,
+                //new GreaterThan(playerMoney));
     }
 }

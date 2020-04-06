@@ -39,7 +39,7 @@ public class GamingMachineTest {
     GamingMachine sut;
 
     @Test
-    public void acceptWinner_calls_cashierAmount_when_the_current_game_accepts_the_bet(BetResult winResult) throws{
+    public void acceptWinner_calls_cashierAmount_when_the_current_game_accepts_the_bet(BetResult winResult){
         //arrange
 
         //assert

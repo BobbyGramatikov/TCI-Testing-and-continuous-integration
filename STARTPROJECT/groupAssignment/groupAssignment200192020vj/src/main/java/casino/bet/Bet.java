@@ -8,6 +8,9 @@ import casino.idfactory.BetID;
  */
 public class Bet extends BetID {
     private BetID betID;
+
+
+
     private MoneyAmount moneyAmount;
 
     public Bet(BetID betID, MoneyAmount moneyAmount) {
@@ -21,5 +24,9 @@ public class Bet extends BetID {
 
     public MoneyAmount getMoneyAmount() {
         return moneyAmount;
+    }
+
+    public void setMoneyAmount(MoneyAmount moneyAmount) {
+        this.moneyAmount = moneyAmount;
     }
 }
