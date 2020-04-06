@@ -23,7 +23,7 @@ public class Cashier implements ICashier {
     @Override
     public IPlayerCard distributeGamblerCard() {
         PlayerCard playerCard = new PlayerCard();
-        
+
         //betLoggingAuthority.handOutGamblingCard(playerCard.getCardID());
 
         return playerCard;
