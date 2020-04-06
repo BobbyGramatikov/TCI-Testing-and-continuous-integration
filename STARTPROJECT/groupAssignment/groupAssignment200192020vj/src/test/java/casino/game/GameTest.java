@@ -108,8 +108,6 @@ public class GameTest {
         Mockito.verify(machine).acceptWinner(betWinner);
     }
 
-
-
     /**
      * determine if the right number of bets are done (determined by gamerules) to be able to
      * calculate a winner.

@@ -157,16 +157,25 @@ public class GamingMachineTest {
     @Test
     public void bettingRound_place_bet_returns_a_value() throws NoPlayerCardException {
         //arrange
-        Bet bet = mock(Bet.class);
+        //GamingMachine sut = mock(GamingMachine.class);
         GamingMachine sut = new GamingMachine();
+
+        Bet bet = mock(Bet.class);
         Game game = mock(Game.class);
-        sut.setGame(game);
         BettingRound round = mock(BettingRound.class);
-        sut.currentGame.SetBettingRound(round);
+        PlayerCard card = mock(PlayerCard.class);
+       // game.SetBettingRound(round);
+
+        sut.setGame(game);
+        sut.currentGame.currentBettingRound = round;
+        sut.currentConnectedCard = card;
+
+
         //act
         sut.placeBet(amountInCents);
         //assert
-        verify(sut.currentGame.currentBettingRound.placeBet(bet));
+
+        verify(game).currentBettingRound.placeBet(bet);
     }
 
     @Test
