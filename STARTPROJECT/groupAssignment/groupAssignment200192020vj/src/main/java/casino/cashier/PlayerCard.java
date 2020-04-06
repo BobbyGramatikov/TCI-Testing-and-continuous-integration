@@ -29,14 +29,14 @@ public class PlayerCard implements IPlayerCard {
 
     public PlayerCard(){
         IDFactory factory = new IDFactory();
-        this.cardID = (CardID) factory.CreateID("card");
+        this.cardID = (CardID) factory.CreateID("casino.game.CardID");
         this.moneyAmount = new MoneyAmount(0);
 
     }
 
     public PlayerCard(MoneyAmount moneyAmount){
         IDFactory factory = new IDFactory();
-        cardID = (CardID) factory.CreateID("card");
+        cardID = (CardID) factory.CreateID("casino.game.CardID");
 
         this.moneyAmount = moneyAmount;
     }

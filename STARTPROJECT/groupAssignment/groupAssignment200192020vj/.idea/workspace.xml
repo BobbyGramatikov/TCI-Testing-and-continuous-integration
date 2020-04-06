@@ -12,24 +12,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/bettingauthoritiyAPI/BetToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/bettingauthoritiyAPI/BetToken.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/bet/Bet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/bet/Bet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/bet/BetResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/bet/BetResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/cashier/PlayerCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/BettingRound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/game/GameRules.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/game/GameRules.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/gamingmachine/GamingMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/casino/idfactory/IDFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameRulesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameRulesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/BettingRoundTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/BettingRoundTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/game/GameTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/gamingmachine/GamingMachineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/gamingmachine/GamingMachineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/gamingmachine/NoPlayerCardExceptionTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/casino/idfactory/IDFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/Bet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/bet/BetResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/bet/BetResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/BettingRound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/game/GameRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/game/GameRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/casino/idfactory/IDFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameRulesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameRulesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/idfactory/IDFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/casino/game/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +106,7 @@
       <recent name="casino" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IDFactoryTest.Factory_Is_Creating_Wanted_General_ID">
+  <component name="RunManager" selected="JUnit.GameTest.Start_Betting_Round_Creates_New_Betting_Round_With_New_Id">
     <configuration name="IDFactoryTest" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <module name="groupAssignment200192020.test" />
       <option name="PACKAGE_NAME" value="casino.idfactory" />
@@ -153,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameRulesTest.getMaxBetsPerRound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameRulesTest.Get_Max_Bets_per_Round_Returns_Correct_Value" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
@@ -163,7 +157,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="casino.game" />
       <option name="MAIN_CLASS_NAME" value="casino.game.GameRulesTest" />
-      <option name="METHOD_NAME" value="getMaxBetsPerRound" />
+      <option name="METHOD_NAME" value="Get_Max_Bets_per_Round_Returns_Correct_Value" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.Determine_winner_is_calling_AcceptWinner_with_right_parameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.Start_Betting_Round_Creates_New_Betting_Round_With_New_Id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
@@ -194,13 +188,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="casino.game" />
       <option name="MAIN_CLASS_NAME" value="casino.game.GameTest" />
-      <option name="METHOD_NAME" value="Determine_winner_is_calling_AcceptWinner_with_right_parameter" />
+      <option name="METHOD_NAME" value="Start_Betting_Round_Creates_New_Betting_Round_With_New_Id" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IDFactoryTest.Factory_Is_Creating_Wanted_General_ID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="groupAssignment200192020" />
       <extension name="coverage">
         <pattern>
@@ -210,7 +204,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="casino.idfactory" />
       <option name="MAIN_CLASS_NAME" value="casino.idfactory.IDFactoryTest" />
-      <option name="METHOD_NAME" value="Factory_Is_Creating_Wanted_General_ID" />
+      <option name="METHOD_NAME" value="On_New_Type_Created_Id_Is_Not_Null" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -266,18 +260,18 @@
     <list>
       <item itemvalue="Android JUnit.IDFactoryTest" />
       <item itemvalue="JUnit.GameRulesTest.Bet_Result_Is_Found_From_Current_Bets_And_Returned_Successfully" />
-      <item itemvalue="JUnit.GameRulesTest.getMaxBetsPerRound" />
-      <item itemvalue="JUnit.GameTest.Determine_winner_is_calling_AcceptWinner_with_right_parameter" />
+      <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
+      <item itemvalue="JUnit.GameRulesTest.Get_Max_Bets_per_Round_Returns_Correct_Value" />
       <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Creating_Wanted_General_ID" />
+      <item itemvalue="JUnit.GameTest.Start_Betting_Round_Creates_New_Betting_Round_With_New_Id" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IDFactoryTest.Factory_Is_Creating_Wanted_General_ID" />
-        <item itemvalue="JUnit.GameRulesTest.Bet_Result_Is_Found_From_Current_Bets_And_Returned_Successfully" />
+        <item itemvalue="JUnit.GameTest.Start_Betting_Round_Creates_New_Betting_Round_With_New_Id" />
         <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.Determine_winner_is_calling_AcceptWinner_with_right_parameter" />
-        <item itemvalue="JUnit.GameRulesTest.getMaxBetsPerRound" />
+        <item itemvalue="JUnit.GameRulesTest.Get_Max_Bets_per_Round_Returns_Correct_Value" />
+        <item itemvalue="JUnit.GameRulesTest.Bet_Result_Is_Found_From_Current_Bets_And_Returned_Successfully" />
+        <item itemvalue="JUnit.IDFactoryTest.On_New_Type_Created_Id_Is_Not_Null" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +304,7 @@
       <workItem from="1585601527530" duration="1398000" />
       <workItem from="1585922283518" duration="14231000" />
       <workItem from="1585990485867" duration="21436000" />
-      <workItem from="1586191590291" duration="15005000" />
+      <workItem from="1586191590291" duration="16119000" />
     </task>
     <task id="LOCAL-00001" summary="Classes added without any logic&#10;Build Gradle configured">
       <created>1585999601433</created>
@@ -367,11 +361,11 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1009" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586013448508" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586105110290">
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586211021884">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="920" y="368" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586011948084" />
-    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586105110290" />
+    <state x="1534" y="465" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586211021884" />
     <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583698601904">
       <screen x="0" y="0" width="1200" height="1890" />
     </state>
@@ -396,22 +390,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="277" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586087082003" />
-    <state width="2517" height="166" key="GridCell.Tab.0.bottom" timestamp="1586210140958">
+    <state width="2517" height="166" key="GridCell.Tab.0.bottom" timestamp="1586211398740">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="166" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586210140958" />
-    <state width="2517" height="166" key="GridCell.Tab.0.center" timestamp="1586210140958">
+    <state width="2517" height="166" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586211398740" />
+    <state width="2517" height="166" key="GridCell.Tab.0.center" timestamp="1586211398740">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="166" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586210140958" />
-    <state width="2517" height="166" key="GridCell.Tab.0.left" timestamp="1586210140958">
+    <state width="2517" height="166" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586211398740" />
+    <state width="2517" height="166" key="GridCell.Tab.0.left" timestamp="1586211398740">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="166" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586210140958" />
-    <state width="2517" height="166" key="GridCell.Tab.0.right" timestamp="1586210140958">
+    <state width="2517" height="166" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586211398740" />
+    <state width="2517" height="166" key="GridCell.Tab.0.right" timestamp="1586211398740">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="166" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586210140958" />
+    <state width="2517" height="166" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586211398740" />
     <state width="2517" height="348" key="GridCell.Tab.1.bottom" timestamp="1586133032242">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -428,14 +422,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="2517" height="348" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586133032242" />
-    <state x="248" y="86" key="MergeDialog" timestamp="1586117016098">
+    <state x="248" y="86" key="MergeDialog" timestamp="1586210981652">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="248" y="86" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586117016098" />
-    <state x="992" y="237" key="MultipleFileMergeDialog" timestamp="1586117022060">
+    <state x="248" y="86" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586210981652" />
+    <state x="1133" y="293" width="987" height="566" key="MultipleFileMergeDialog" timestamp="1586210988986">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="992" y="237" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586117022060" />
+    <state x="1133" y="293" width="987" height="566" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1586210988986" />
     <state x="1126" y="94" key="SettingsEditor" timestamp="1586126981329">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -448,10 +442,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1127" y="441" key="VCS.ChangelistChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586099479634" />
-    <state x="972" y="281" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1586105954730">
+    <state x="972" y="281" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1586210940375">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="972" y="281" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.2560.1040@0.0.2560.1040" timestamp="1586105954730" />
+    <state x="972" y="281" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.2560.1040@0.0.2560.1040" timestamp="1586210940375" />
     <state x="872" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585999608263">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -464,10 +458,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="930" y="137" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1586132004736" />
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586132117974">
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586210780932">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586132117974" />
+    <state x="1091" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1586210780932" />
     <state x="1051" y="239" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586128602829">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

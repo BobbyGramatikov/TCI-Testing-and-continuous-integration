@@ -36,10 +36,9 @@ public class GameTest {
         sut = new Game(dummyAuth,dummyRound,dummyRules,dummyMachine);
     }
 
-    @Test
+    @Test(timeout=400)
     public void Start_Betting_Round_Creates_New_Betting_Round_With_New_Id()
     {
-
         sut.startBettingRound();
         BettingRound oldRound = sut.currentBettingRound;
         assertThat(oldRound.id,not(nullValue()));
