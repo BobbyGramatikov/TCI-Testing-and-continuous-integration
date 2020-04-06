@@ -7,6 +7,7 @@ import casino.cashier.IPlayerCard;
 import casino.cashier.PlayerCard;
 import casino.game.BettingRound;
 import casino.game.Game;
+import casino.game.NoCurrentRoundException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,9 @@ public class GamingMachine implements IGamingMachine
     PlayerCard currentConnectedCard = new PlayerCard();
     BettingRound br;
     Game currentGame;
+    public GamingMachine(){
+
+    }
 
     public void setGame(Game game){
         currentGame = game;
@@ -30,9 +34,9 @@ public class GamingMachine implements IGamingMachine
     //setters
 
     @Override
-    public boolean placeBet(long amountInCents) throws NoPlayerCardException {
+    public boolean placeBet(long amountInCents) throws NoPlayerCardException, NoCurrentRoundException {
         // place bet
-
+        boolean result;
         MoneyAmount ma = new MoneyAmount(amountInCents);
 
         Bet bet = new Bet(currentConnectedCard.generateNewBetID(),ma);
@@ -40,20 +44,28 @@ public class GamingMachine implements IGamingMachine
 //        BettingRound br = new BettingRound();
 //        currentGame.SetBettingRound(br);
 
-    boolean result = currentGame.currentBettingRound.placeBet(bet);
-        return  result;
+        if(currentGame.acceptBet(bet,this)){
+            result = currentGame.currentBettingRound.placeBet(bet);
+            return result;
+        }
 
+        return false;
 
     }
 
     @Override
     public void acceptWinner(BetResult winResult) {
 //call method game
+     /* Accept the BetResult from the winner.
+     * clear all open bets on this machine.
+     * when the winner has made his bet in this machine: let the Cashier update the amount.
+     */
+
     }
 
     @Override
     public GamingMachine getGamingMachineID() {
-        return null;
+        return casino.gamingmachine.GamingMachine.this;
     }
 
     //setter don't check

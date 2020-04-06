@@ -2,6 +2,7 @@ package casino.gamingmachine;
 
 import casino.bet.BetResult;
 import casino.cashier.IPlayerCard;
+import casino.game.NoCurrentRoundException;
 
 public interface IGamingMachine {
     /**
@@ -9,7 +10,7 @@ public interface IGamingMachine {
      * @param amountInCents
      * @return
      */
-    boolean placeBet(long amountInCents) throws NoPlayerCardException;
+    boolean placeBet(long amountInCents) throws NoPlayerCardException, NoCurrentRoundException;
 
     /**
      * Accept the BetResult from the winner.

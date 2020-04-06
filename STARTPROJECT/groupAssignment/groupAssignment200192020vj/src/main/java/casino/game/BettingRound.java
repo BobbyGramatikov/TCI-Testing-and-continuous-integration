@@ -6,6 +6,7 @@ import casino.bet.Bet;
 import casino.idfactory.BettingRoundID;
 import casino.idfactory.IDFactory;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class BettingRound implements IBettingRound {
@@ -19,16 +20,19 @@ public class BettingRound implements IBettingRound {
         IDFactory factory = new IDFactory();
         id = (BettingRoundID) factory.CreateID("round");
         this.token =token;
+        bets = new HashSet<>();
     }
     @Override
     public BettingRound getBettingRoundID() {
         return null;
     }
 
+
     @Override
     public boolean placeBet(Bet bet) {
         return false;
     }
+
 
     @Override
     public Set<Bet> getAllBetsMade() {
