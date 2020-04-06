@@ -7,6 +7,8 @@ import java.util.Currency;
  * For demo purposes: hardocded USD
  */
 public class MoneyAmount {
+
+
     private long amountInCents;
     private Currency currency;
 
@@ -17,5 +19,9 @@ public class MoneyAmount {
 
     public long getAmountInCents() {
         return amountInCents;
+    }
+
+    public void setAmountInCents(long amountInCents) {
+        this.amountInCents = amountInCents;
     }
 }

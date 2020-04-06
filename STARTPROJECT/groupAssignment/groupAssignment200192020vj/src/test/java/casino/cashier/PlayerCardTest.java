@@ -41,12 +41,11 @@ public class PlayerCardTest {
     public void generateNewBetIDAddsBetIdToTheSet() {
         //arrange
         PlayerCard playerCard = new PlayerCard();
-        BetID mockBetId;
         int expectedNrOfBets = 1;
         int actualNrOfBets;
 
         //act
-        mockBetId = playerCard.generateNewBetID();
+        playerCard.generateNewBetID();
         actualNrOfBets = playerCard.getNumberOfBetIDs();
 
         //assert
@@ -87,15 +86,16 @@ public class PlayerCardTest {
     @Test
     public void returnBetIdsAndClearCardSetMoneyToZero() {
         //arrange
-        MoneyAmount moneyAmount = new MoneyAmount(100);
+        MoneyAmount moneyAmount = mock(MoneyAmount.class);
         PlayerCard playerCard = new PlayerCard(moneyAmount);
         long expectedMoney = 0;
 
         //act
-
+        when(playerCard.getMoneyAmount().getAmountInCents()).thenReturn((long) 100);
         playerCard.generateNewBetID();
         playerCard.returnBetIDsAndClearCard();
         long actualMoney = playerCard.getMoneyAmount().getAmountInCents();
+
         //assert
         assertEquals("returnBetIdsAndClearCard does not clear the card", expectedMoney, actualMoney);
 
