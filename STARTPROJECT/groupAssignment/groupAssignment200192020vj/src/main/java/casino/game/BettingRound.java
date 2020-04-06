@@ -21,12 +21,11 @@ public class BettingRound implements IBettingRound {
     public BettingRound(BetToken token)
     {
         IDFactory factory = new IDFactory();
-        id = (BettingRoundID) factory.CreateID("casino.game.BettingRoundID");
+        id = (BettingRoundID) factory.CreateID("casino.idfactory.BettingRoundID");
         this.token =token;
         bets = new HashSet<>();
         BettingRoundID bettingRoundID = new BettingRoundID();
         BetToken betToken = new BetToken(bettingRoundID);
-        currentBettingRound = new BettingRound(betToken);
     }
 
     @Override
