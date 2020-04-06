@@ -1,4 +1,5 @@
 package casino.game;
+import bettingauthoritiyAPI.BetToken;
 import bettingauthoritiyAPI.BetTokenAuthority;
 import bettingauthoritiyAPI.BettingAuthority;
 import casino.bet.Bet;
@@ -13,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
+import java.awt.event.MouseEvent;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -80,28 +82,31 @@ public class GameTest {
      */
 
     @Test
-    public void determineWinner()
+    public void Determine_winner_is_calling_AcceptWinner_with_right_parameter()
     {
         BetTokenAuthority auth = Mockito.mock(BetTokenAuthority.class);
         sut.SetBettingAuthority(auth);
         BettingRound round = Mockito.mock(BettingRound.class);
         sut.SetBettingRound(round);
         Set<Bet> mySet = (Set<Bet>) Mockito.mock(Set.class);
-        Mockito.when(sut.currentBettingRound.getAllBetsMade()).thenReturn(mySet);
+
+        Mockito.when(round.getAllBetsMade()).thenReturn(mySet);
         GamingMachine machine = Mockito.mock(GamingMachine.class);
         sut.SetGamingMachine(machine);
         GameRules rules = Mockito.mock(GameRules.class);
         sut.SetGameRules(rules);
-        sut.determineWinner();
+
         Bet dummyBet = Mockito.mock(Bet.class);
-        MoneyAmount dummyMoneyAmount = Mockito.mock(MoneyAmount.class);
+        MoneyAmount dummyMoneyAmount = new MoneyAmount(999);
         BetResult betWinner = new BetResult(dummyBet,dummyMoneyAmount);
-        Mockito.when(sut.auth.getRandomInteger(sut.currentBettingRound.token)).thenReturn(10);
-        Mockito.when(sut.gameRules.determineWinner(sut.auth.getRandomInteger(sut.currentBettingRound.token),mySet)).thenReturn(betWinner);
-        Mockito.verify(sut.gamingMachine).acceptWinner(betWinner);
+        BetToken dummyToken = Mockito.mock(BetToken.class);
+        Mockito.when(auth.getRandomInteger(dummyToken)).thenReturn(3);
+        assertThat(3,is(auth.getRandomInteger(dummyToken)));
+        Mockito.when(rules.determineWinner(Mockito.anyInt(),Mockito.anySet())).thenReturn(betWinner);
+        sut.determineWinner();
+        assertThat(betWinner,is(notNullValue()));
+        Mockito.verify(machine).acceptWinner(betWinner);
     }
-
-
 
     /**
      * determine if the right number of bets are done (determined by gamerules) to be able to
@@ -109,7 +114,7 @@ public class GameTest {
      * @return true if all necessary bets are made in the betting round, otherwise false
      */
     @Test
-    public void isBettingRoundFinished()
+    public void IsBettingRoundFinished_Returns_True_when_Bets_more_than_5_and_false_if_less_than_5()
     {
         BettingRound bettingRound= Mockito.mock(BettingRound.class);
         GameRules gameRules = Mockito.mock(GameRules.class);
